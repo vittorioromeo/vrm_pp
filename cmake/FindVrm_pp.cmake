@@ -5,6 +5,10 @@
 
 # Adapted from Louise Dionne's FindHana.cmake file
 
+# Copyright Louis Dionne 2015
+# Distributed under the Boost Software License, Version 1.0.
+# (See accompanying file LICENSE.md or copy at http://boost.org/LICENSE_1_0.txt)
+
 # TODO: document variables:
 # VRM_PP_FOUND
 # VRM_PP_INCLUDE_DIR
