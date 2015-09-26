@@ -144,4 +144,8 @@ add_custom_target(check ALL
 ##############################################################################
 # Setup subdirectories
 ##############################################################################
+add_subdirectory(generator)
 add_subdirectory(test)
+
+# Tests depend on generator
+add_dependencies(tests generator_run)

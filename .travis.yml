@@ -36,3 +36,5 @@ script:
     - cd ${TRAVIS_BUILD_DIR}
     - cd build
     - make -j
+
+after_script:
