@@ -1,2 +1,5 @@
 # vrm_pp
-Small C preprocessor library
+
+https://travis-ci.org/SuperV1234/vrm_pp.svg?branch=master
+
+Small C++ preprocessor library
