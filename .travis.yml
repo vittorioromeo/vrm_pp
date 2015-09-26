@@ -12,5 +12,4 @@ before_script:
     - mkdir build && cd build
     - cmake .. -DCMAKE_CXX_COMPILER=${COMPILER} -DVRM_PP_ENABLE_WERROR=ON ${CMAKE_OPTIONS}
 
-script:
-    - make -j
+script: cmake
