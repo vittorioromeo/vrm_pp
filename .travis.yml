@@ -11,11 +11,63 @@ os:
 sudo:
     - false
 
+matrix:
+    include:
+        # Clang 3.6
+        - env: UNIT_TESTS=true COMPILER=clang++-3.6 CMAKE_OPTIONS="-DVRM_PP_ENABLE_MEMCHECK=ON"
+          addons: 
+            apt:
+                sources:
+                    - ubuntu-toolchain-r-test
+                    - llvm-toolchain-precise
+                    - llvm-toolchain-precise-3.6
+                packages:
+                    - clang-3.6
+                    - valgrind
+
+        # Clang 3.7
+        - env: UNIT_TESTS=true COMPILER=clang++-3.7 CMAKE_OPTIONS="-DVRM_PP_ENABLE_MEMCHECK=ON"
+          addons: 
+            apt:
+                sources:
+                    - ubuntu-toolchain-r-test
+                    - llvm-toolchain-precise
+                    - llvm-toolchain-precise-3.7
+                packages:
+                    - clang-3.7
+                    - valgrind
+
+        # Gcc 4.9
+        - env: UNIT_TESTS=true COMPILER=g++-4.9 CMAKE_OPTIONS="-DVRM_PP_ENABLE_MEMCHECK=ON"
+          addons:
+            apt:
+                sources:
+                    - ubuntu-toolchain-r-test
+                    - llvm-toolchain-precise
+                    - llvm-toolchain-precise-3.7
+                packages:
+                    - gcc-4.9
+                    - g++-4.9
+                    - valgrind
+
+        # Gcc 5.1
+        - env: UNIT_TESTS=true COMPILER=g++-5 CMAKE_OPTIONS="-DVRM_PP_ENABLE_MEMCHECK=ON"
+          addons:
+            apt:
+                sources:
+                    - ubuntu-toolchain-r-test
+                    - llvm-toolchain-precise
+                    - llvm-toolchain-precise-3.7
+                packages:
+                    - gcc-5
+                    - g++-5
+                    - valgrind
+
 install:
     # Set and create dependencies directory
     - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
     - mkdir ${DEPS_DIR} && cd ${DEPS_DIR}
-    
+
     # Download a recent version of CMake
     - |
         if [[ "${TRAVIS_OS_NAME}" == "linux" ]]; then
@@ -36,5 +88,3 @@ script:
     - cd ${TRAVIS_BUILD_DIR}
     - cd build
     - make -j
-
-after_script:
