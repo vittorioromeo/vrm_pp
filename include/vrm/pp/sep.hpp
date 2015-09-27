@@ -6,6 +6,8 @@
 #pragma once
 
 #include <vrm/pp/utils.hpp>
+#include <vrm/pp/bool.hpp>
+#include <vrm/pp/for_each.hpp>
 
 #define VRM_PP_IMPL_SEP(mIdx, mData, mArg) \
     mArg VRM_PP_IF(mIdx, mData, VRM_PP_EMPTY())

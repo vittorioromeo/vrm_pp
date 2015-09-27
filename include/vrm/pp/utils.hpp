@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include <vrm/pp/generated/output.hpp>
+#include <vrm/pp/generated.hpp>
 
 #define VRM_PP_EMPTY()
 #define VRM_PP_DOT() .
