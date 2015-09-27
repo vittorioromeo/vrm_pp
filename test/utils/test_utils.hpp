@@ -3,11 +3,12 @@
 #include <exception>
 #include <string>
 #include <sstream>
+#include <iostream>
 
 namespace impl
 {
     template <typename T>
-    inline void test_assert(bool x, const T& res, const char* expr)
+    inline void test_assert(bool x, const T& res, const char* expr) noexcept
     {
         using namespace std::literals;
 
@@ -17,7 +18,8 @@ namespace impl
         error << expr << "\n"
               << "result: " << res << "\n";
 
-        throw std::runtime_error{error.str()};
+        std::cout << error.str() << std::endl;
+        std::terminate();
     }
 
     template <typename T>
@@ -33,7 +35,8 @@ namespace impl
               << "result: " << res << "\n"
               << "expected: " << expected << "\n";
 
-        throw std::runtime_error{error.str()};
+        std::cout << error.str() << std::endl;
+        std::terminate();
     }
 }
 
