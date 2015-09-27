@@ -71,18 +71,23 @@ void mkTupleElemReverse(size_t i)
 
 void mkCat(size_t i)
 {
-    out << def_s + pfx + "_IMPL_TPL_CAT_" << i << "(m0, m1, ...)  "s + pfx + "_IMPL_TPL_CAT_" << i - 1 << "("s + pfx + "_TPL_MAKE("s + pfx + "_TPL_EXPLODE(m0), "s + pfx + "_TPL_EXPLODE(m1)), __VA_ARGS__)\n";
+    out << def_s + pfx + "_IMPL_TPL_CAT_" << i
+        << "(m0, m1, ...)  "s + pfx + "_IMPL_TPL_CAT_" << i - 1
+        << "("s + pfx + "_TPL_MAKE("s + pfx + "_TPL_EXPLODE(m0), "s + pfx +
+               "_TPL_EXPLODE(m1)), __VA_ARGS__)\n";
 }
 
 void genTuple()
 {
     for(auto i(0u); i < tplCount; ++i) mkFill(i);
-    out << def_s + pfx + "_IMPL_TPL_FILL_" << tplCount << "(m0)   "s + pfx + "_TPL_EXPLODE(m0)\n";
+    out << def_s + pfx + "_IMPL_TPL_FILL_" << tplCount
+        << "(m0)   "s + pfx + "_TPL_EXPLODE(m0)\n";
     out << "\n";
 
     // tpl fill reverse
     for(auto i(0u); i < tplCount; ++i) mkFillReverse(i);
-    out << def_s + pfx + "_IMPL_TPL_FILL_REVERSE_" << tplCount << "(m0)   "s + pfx + "_TPL_EXPLODE(m0)\n";
+    out << def_s + pfx + "_IMPL_TPL_FILL_REVERSE_" << tplCount
+        << "(m0)   "s + pfx + "_TPL_EXPLODE(m0)\n";
     out << "\n";
 
     // tpl elem
@@ -96,7 +101,8 @@ void genTuple()
     // tpl cat
     out << def_s + pfx + "_IMPL_TPL_CAT_0()           "s + pfx + "_EMPTY()\n";
     out << def_s + pfx + "_IMPL_TPL_CAT_1(m0)         m0\n";
-    out << def_s + pfx + "_IMPL_TPL_CAT_2(m0, m1)     "s + pfx + "_TPL_MAKE("s + pfx + "_TPL_EXPLODE(m0), "s + pfx + "_TPL_EXPLODE(m1))\n";
+    out << def_s + pfx + "_IMPL_TPL_CAT_2(m0, m1)     "s + pfx + "_TPL_MAKE("s +
+               pfx + "_TPL_EXPLODE(m0), "s + pfx + "_TPL_EXPLODE(m1))\n";
     for(auto i(3u); i < tplCount * 2 + 1; ++i) mkCat(i);
     out << "\n";
 
@@ -110,18 +116,23 @@ void genArithmetic()
     out << def_s + pfx + "_IMPL_DECREMENT_0 0\n";
     out << def_s + pfx + "_IMPL_DECREMENT_1 0\n";
     out << def_s + pfx + "_IMPL_DECREMENT_2 1\n";
-    for(auto i(3u); i < arithCount; ++i) out << def_s + pfx + "_IMPL_DECREMENT_" << i << " " << i - 1 << "\n";
+    for(auto i(3u); i < arithCount; ++i)
+        out << def_s + pfx + "_IMPL_DECREMENT_" << i << " " << i - 1 << "\n";
     out << "\n";
 
     // increment
-    for(auto i(0u); i < arithCount - 1; ++i) out << def_s + pfx + "_IMPL_INCREMENT_" << i << " " << i + 1 << "\n";
-    out << def_s + pfx + "_IMPL_INCREMENT_" << arithCount - 1 << " " << arithCount << "\n";
-    out << def_s + pfx + "_IMPL_INCREMENT_" << arithCount << " " << arithCount << "\n";
+    for(auto i(0u); i < arithCount - 1; ++i)
+        out << def_s + pfx + "_IMPL_INCREMENT_" << i << " " << i + 1 << "\n";
+    out << def_s + pfx + "_IMPL_INCREMENT_" << arithCount - 1 << " "
+        << arithCount << "\n";
+    out << def_s + pfx + "_IMPL_INCREMENT_" << arithCount << " " << arithCount
+        << "\n";
     out << "\n";
 
     // bool
     out << def_s + pfx + "_IMPL_BOOL_0 0\n";
-    for(auto i(1u); i < arithCount; ++i) out << def_s + pfx + "_IMPL_BOOL_" << i << " 1\n";
+    for(auto i(1u); i < arithCount; ++i)
+        out << def_s + pfx + "_IMPL_BOOL_" << i << " 1\n";
     out << "\n";
 }
 
@@ -146,37 +157,54 @@ void genArgCount()
     // cat
     out << def_s + pfx + "_IMPL_CAT_0()           "s + pfx + "_EMPTY()\n";
     out << def_s + pfx + "_IMPL_CAT_1(m0)         "s + pfx + "_EXPAND(m0)\n";
-    out << def_s + pfx + "_IMPL_CAT_2(m0, m1)     "s + pfx + "_IMPL_CAT_1("s + pfx + "_TKNCAT_2(m0, m1))\n";
-    for(auto i(3u); i < argCount; ++i) out << def_s + pfx + "_IMPL_CAT_" << i << "(m0, m1, ...)   "s + pfx + "_IMPL_CAT_" << i - 1 << "("s + pfx + "_TKNCAT_2(m0, m1), __VA_ARGS__)\n";
+    out << def_s + pfx + "_IMPL_CAT_2(m0, m1)     "s + pfx + "_IMPL_CAT_1("s +
+               pfx + "_TKNCAT_2(m0, m1))\n";
+    for(auto i(3u); i < argCount; ++i)
+        out << def_s + pfx + "_IMPL_CAT_" << i
+            << "(m0, m1, ...)   "s + pfx + "_IMPL_CAT_" << i - 1
+            << "("s + pfx + "_TKNCAT_2(m0, m1), __VA_ARGS__)\n";
     out << "\n";
 }
 
 void genForeach()
 {
-    out << def_s + pfx + "_IMPL_FOREACH_0(mLast, mAction, mData)                  \n";
-    out << def_s + pfx + "_IMPL_FOREACH_1(mLast, mAction, mData, mA0)             mAction(mLast, mData, mA0)\n";
-    out << def_s + pfx + "_IMPL_FOREACH_2(mLast, mAction, mData, mA0, mA1)        mAction(mLast, mData, mA0) "s + pfx + "_IMPL_FOREACH_1("s + pfx + "_INCREMENT(mLast), mAction, mData, mA1)\n";
+    out << def_s + pfx +
+               "_IMPL_FOREACH_0(mLast, mAction, mData)                  \n";
+    out << def_s + pfx +
+               "_IMPL_FOREACH_1(mLast, mAction, mData, mA0)             "
+               "mAction(mLast, mData, mA0)\n";
+    out << def_s + pfx +
+               "_IMPL_FOREACH_2(mLast, mAction, mData, mA0, mA1)        mAction(mLast, mData, mA0) "s +
+               pfx + "_IMPL_FOREACH_1("s + pfx +
+               "_INCREMENT(mLast), mAction, mData, mA1)\n";
 
-    for(auto i(2u); i < foreachCount; ++i)
-    {
+    for(auto i(2u); i < foreachCount; ++i) {
         out << def_s + pfx + "_IMPL_FOREACH_" << i + 1;
         out << "(mLast, mAction, mData, mA0, mA1, ...)       ";
-        out << "mAction(mLast, mData, mA0) "s + pfx + "_IMPL_FOREACH_" << i << "("s + pfx + "_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)";
+        out << "mAction(mLast, mData, mA0) "s + pfx + "_IMPL_FOREACH_" << i
+            << "("s + pfx +
+                   "_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)";
         out << "\n";
     }
 }
 
 void genForeachReverse()
 {
-    out << def_s + pfx + "_IMPL_FOREACH_REVERSE_0(mAction, mData)                     \n";
-    out << def_s + pfx + "_IMPL_FOREACH_REVERSE_1(mAction, mData, mA0)                mAction(0, mData, mA0)\n";
-    out << def_s + pfx + "_IMPL_FOREACH_REVERSE_2(mAction, mData, mA0, mA1)           mAction(1, mData, mA0) "s + pfx + "_IMPL_FOREACH_REVERSE_1(mAction, mData, mA1)\n";
+    out << def_s + pfx +
+               "_IMPL_FOREACH_REVERSE_0(mAction, mData)                     \n";
+    out << def_s + pfx +
+               "_IMPL_FOREACH_REVERSE_1(mAction, mData, mA0)                "
+               "mAction(0, mData, mA0)\n";
+    out << def_s + pfx +
+               "_IMPL_FOREACH_REVERSE_2(mAction, mData, mA0, mA1)           mAction(1, mData, mA0) "s +
+               pfx + "_IMPL_FOREACH_REVERSE_1(mAction, mData, mA1)\n";
 
-    for(auto i(2u); i < foreachCount; ++i)
-    {
+    for(auto i(2u); i < foreachCount; ++i) {
         out << def_s + pfx + "_IMPL_FOREACH_REVERSE_" << i + 1;
         out << "(mAction, mData, mA0, mA1, ...)      ";
-        out << "mAction(" << i << ", mData, mA0) "s + pfx + "_IMPL_FOREACH_REVERSE_" << i << "(mAction, mData, mA1, __VA_ARGS__)";
+        out << "mAction(" << i
+            << ", mData, mA0) "s + pfx + "_IMPL_FOREACH_REVERSE_" << i
+            << "(mAction, mData, mA1, __VA_ARGS__)";
         out << "\n";
     }
 }
@@ -186,22 +214,28 @@ void genRepeat()
     out << def_s + pfx + "_IMPL_REPEAT_DEC_0(mAction, mData)\n";
 
     for(auto i(0u); i < repeatCount; ++i)
-        out << def_s + pfx + "_IMPL_REPEAT_DEC_" << i + 1 << "(mAction, mData) mAction(" << i << ", mData) "s + pfx + "_IMPL_REPEAT_DEC_" << i << "(mAction, mData)\n";
+        out << def_s + pfx + "_IMPL_REPEAT_DEC_" << i + 1
+            << "(mAction, mData) mAction(" << i
+            << ", mData) "s + pfx + "_IMPL_REPEAT_DEC_" << i
+            << "(mAction, mData)\n";
 
     out << "\n";
 
     out << def_s + pfx + "_IMPL_REPEAT_INC_0(mAction, mData, mLast)\n";
 
     for(auto i(0u); i < repeatCount; ++i)
-        out << def_s + pfx + "_IMPL_REPEAT_INC_" << i + 1 << "(mAction, mData, mLast) mAction(mLast, mData) "s + pfx + "_IMPL_REPEAT_INC_" << i << "(mAction, mData, "s + pfx + "_INCREMENT(mLast))\n";
+        out << def_s + pfx + "_IMPL_REPEAT_INC_" << i + 1
+            << "(mAction, mData, mLast) mAction(mLast, mData) "s + pfx +
+                   "_IMPL_REPEAT_INC_" << i
+            << "(mAction, mData, "s + pfx + "_INCREMENT(mLast))\n";
 }
 
 void genEval()
 {
-    out << def_s + pfx + "_IMPL_EVAL_" << evalDepth - 1 << "(...) __VA_ARGS__\n";
+    out << def_s + pfx + "_IMPL_EVAL_" << evalDepth - 1
+        << "(...) __VA_ARGS__\n";
 
-    for(auto i(1u); i < evalDepth; ++i)
-    {
+    for(auto i(1u); i < evalDepth; ++i) {
         auto dp(evalDepth - i);
 
         out << def_s + pfx + "_IMPL_EVAL_" << dp - 1 << "(...) ";
@@ -211,8 +245,7 @@ void genEval()
 
         out << "__VA_ARGS__";
 
-        for(auto j(0u); j < 3; ++j)
-            out << ")";
+        for(auto j(0u); j < 3; ++j) out << ")";
 
         out << "\n";
     }
@@ -220,9 +253,8 @@ void genEval()
 
 int main()
 {
-    out << copyright << 
-              "// (auto-generated file)\n\n"
-              "#pragma once\n\n";
+    out << copyright << "// (auto-generated file)\n\n"
+                        "#pragma once\n\n";
 
     genArithmetic();
     out << "\n\n";

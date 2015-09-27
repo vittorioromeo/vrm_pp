@@ -3,14 +3,18 @@
 # AFL License page: http://opensource.org/licenses/AFL-3.0
 # http://vittorioromeo.info | vittorio.romeo@outlook.com
 
-add_executable(generator "${VRM_PP_SOURCE_DIR}/generator/generator.cpp")
+set(VRM_PP_GENERATOR_SRC "${VRM_PP_SOURCE_DIR}/generator/generator.cpp")
 set(VRM_PP_GENERATED "${VRM_PP_SOURCE_DIR}/include/vrm/pp/generated/output.hpp")
 
-add_custom_target(generator_run
-  DEPENDS generator
-  COMMAND generator > ${VRM_PP_GENERATED}
-  WORKING_DIRECTORY ${VRM_PP_SOURCE_DIR}
-  COMMENT "run generated generator in ${VRM_PP_SOURCE_DIR}"
-)
+# Compile the generator executable.
+add_executable(generator "${VRM_PP_GENERATOR_SRC}")
 
-add_dependencies(generator_run generator)
+# Add a custom target that will run the generator and output its result to a file.
+add_custom_target(generator_run
+    # The custom command target depends on the executable.
+    DEPENDS generator
+
+    # Redirect output to file.
+    COMMAND generator > ${VRM_PP_GENERATED}
+    COMMENT "run generated generator in ${VRM_PP_SOURCE_DIR}"
+)
