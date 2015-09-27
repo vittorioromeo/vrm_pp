@@ -2,6 +2,7 @@ language: c++
 compiler: clang
 os: linux
 sudo: required
+env: UNIT_TESTS=false COMPILER=clang++-3.6 CMAKE_OPTIONS="-DVRM_PP_ENABLE_MEMCHECK=OFF"
 
 matrix:
     include:
