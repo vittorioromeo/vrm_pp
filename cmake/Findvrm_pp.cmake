@@ -16,8 +16,29 @@
 # VRM_PP_ENABLE_TESTS
 
 if (NOT EXISTS "${VRM_PP_INCLUDE_DIR}")
-    find_path(VRM_PP_INCLUDE_DIR NAMES vrm/pp.hpp
-              DOC "Include directory for the vrm_pp library")
+    find_path(
+        VRM_PP_INCLUDE_DIR 
+
+        NAMES vrm/pp.hpp
+        DOC "Include directory for the vrm_pp library"
+
+        PATH_SUFFIXES include/
+    
+        PATHS
+            "${PROJECT_SOURCE_DIR}/../vrm_pp/"
+            ${VRM_PP_ROOT}
+            $ENV{VRM_PP_ROOT}
+            /usr/local/
+            /usr/
+            /sw/
+            /opt/local/
+            /opt/csw/
+            /opt/
+            "${PROJECT_SOURCE_DIR}/extlibs/vrm_pp/"
+            "${CMAKE_CURRENT_LIST_DIR}/../../"
+
+            NO_DEFAULT_PATH
+    )
 endif()
 
 if (NOT EXISTS "${VRM_PP_INCLUDE_DIR}" AND DEFINED VRM_PP_CLONE_DIR)

@@ -75,4 +75,4 @@ before_script:
 script:
     - cd ${TRAVIS_BUILD_DIR}
     - cd build
-    - make -j
+    - make -j check
