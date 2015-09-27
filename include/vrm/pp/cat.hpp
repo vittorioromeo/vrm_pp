@@ -6,6 +6,7 @@
 #pragma once
 
 #include <vrm/pp/utils.hpp>
+#include <vrm/pp/arg_count.hpp>
 
 #define VRM_PP_IMPL_CAT(...) \
     VRM_PP_TKNCAT_2(VRM_PP_IMPL_CAT_, VRM_PP_ARGCOUNT(__VA_ARGS__))(__VA_ARGS__)

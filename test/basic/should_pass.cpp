@@ -3,7 +3,7 @@
 
 int main()
 {
-    test_assert(true);
+    TEST_ASSERT(true);
 
     return 0;
 }

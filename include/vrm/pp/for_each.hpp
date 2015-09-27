@@ -6,6 +6,8 @@
 #pragma once
 
 #include <vrm/pp/utils.hpp>
+#include <vrm/pp/arg_count.hpp>
+#include <vrm/pp/arithmetic.hpp>
 
 #define VRM_PP_IMPL_FOREACH(mAction, mData, ...)                         \
     VRM_PP_TKNCAT_2(VRM_PP_IMPL_FOREACH_, VRM_PP_ARGCOUNT(__VA_ARGS__))( \

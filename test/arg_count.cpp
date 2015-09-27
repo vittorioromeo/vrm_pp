@@ -3,13 +3,13 @@
 
 int main()
 {
-    test_assert(VRM_PP_ARGCOUNT() == 0);
-    test_assert(VRM_PP_ARGCOUNT(1) == 1);
-    test_assert(VRM_PP_ARGCOUNT(1, 1) == 2);
-    test_assert(VRM_PP_ARGCOUNT(1, 1, 1) == 3);
-    test_assert(VRM_PP_ARGCOUNT(1, 1, 1, 1) == 4);
-    test_assert(VRM_PP_ARGCOUNT(1, 1, 1, 1, 1) == 5);
-    test_assert(VRM_PP_ARGCOUNT(1, 1, 1, 1, 1, 1) == 6);
+    TEST_ASSERT(VRM_PP_ARGCOUNT() == 0);
+    TEST_ASSERT(VRM_PP_ARGCOUNT(1) == 1);
+    TEST_ASSERT(VRM_PP_ARGCOUNT(1, 1) == 2);
+    TEST_ASSERT(VRM_PP_ARGCOUNT(1, 1, 1) == 3);
+    TEST_ASSERT(VRM_PP_ARGCOUNT(1, 1, 1, 1) == 4);
+    TEST_ASSERT(VRM_PP_ARGCOUNT(1, 1, 1, 1, 1) == 5);
+    TEST_ASSERT(VRM_PP_ARGCOUNT(1, 1, 1, 1, 1, 1) == 6);
 
     return 0;
 }

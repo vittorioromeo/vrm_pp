@@ -6,6 +6,7 @@
 #pragma once
 
 #include <vrm/pp/utils.hpp>
+#include <vrm/pp/arg_count.hpp>
 
 #define VRM_PP_IMPL_TPL_EXPLODE(...) __VA_ARGS__
 #define VRM_PP_IMPL_TPL_MAKE(...) (__VA_ARGS__)

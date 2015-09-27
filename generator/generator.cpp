@@ -15,7 +15,7 @@ constexpr size_t arithCount{256};
 constexpr size_t foreachCount{128};
 constexpr size_t tplCount{64};
 constexpr size_t repeatCount{128};
-constexpr size_t evalDepth{5};
+constexpr size_t evalDepth{4};
 
 constexpr auto pfx("VRM_PP");
 

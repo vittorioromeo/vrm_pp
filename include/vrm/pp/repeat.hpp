@@ -6,6 +6,7 @@
 #pragma once
 
 #include <vrm/pp/utils.hpp>
+#include <vrm/pp/arithmetic.hpp>
 
 #define VRM_PP_IMPL_REPEAT_DEC(mTimes, mAction, mData) \
     VRM_PP_TKNCAT_2(VRM_PP_IMPL_REPEAT_DEC_, mTimes)(mAction, mData)
