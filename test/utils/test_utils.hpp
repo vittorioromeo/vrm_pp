@@ -11,14 +11,13 @@ namespace impl
     {
         using namespace std::literals;
 
-        if(!x) {
-            std::ostringstream error;
+        if(x) return;
+        std::ostringstream error;
 
-            error << expr << "\n"
-                  << "result: " << res << "\n";
+        error << expr << "\n"
+              << "result: " << res << "\n";
 
-            throw std::runtime_error{error.str()};
-        }
+        throw std::runtime_error{error.str()};
     }
 
     template <typename T>
@@ -27,15 +26,14 @@ namespace impl
     {
         using namespace std::literals;
 
-        if(!x) {
-            std::ostringstream error;
+        if(x) return;
+        std::ostringstream error;
 
-            error << expr << "\n"
-                  << "result: " << res << "\n"
-                  << "expected: " << expected << "\n";
+        error << expr << "\n"
+              << "result: " << res << "\n"
+              << "expected: " << expected << "\n";
 
-            throw std::runtime_error{error.str()};
-        }
+        throw std::runtime_error{error.str()};
     }
 }
 
