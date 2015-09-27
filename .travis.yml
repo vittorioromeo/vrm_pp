@@ -63,11 +63,6 @@ before_install:
       mkdir cmake && travis_retry wget --quiet -O - ${CMAKE_URL} | tar --strip-components=1 -xz -C cmake
       export PATH=${DEPS_DIR}/cmake/bin:${PATH}
 
-install:
-    # Set and create dependencies directory
-    - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
-    - mkdir ${DEPS_DIR} && cd ${DEPS_DIR}
-
 before_script:
     - cd ${TRAVIS_BUILD_DIR}
     - ./init-repository.sh
