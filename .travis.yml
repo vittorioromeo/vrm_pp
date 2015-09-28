@@ -1,6 +1,7 @@
 language: cpp
 os: linux
 sudo: false
+compiler: clang
 
 addons:
     apt:
