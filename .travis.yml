@@ -6,10 +6,6 @@ compiler:
     - clang
     - gcc
 
-cache:
-    apt: true
-    directories:
-        - ${TRAVIS_BUILD_DIR}/deps
 addons:
     apt:
         sources:
@@ -29,6 +25,9 @@ before_install:
       CMAKE_URL="http://www.cmake.org/files/v3.3/cmake-3.3.1-Linux-x86_64.tar.gz"
       mkdir cmake && travis_retry wget --quiet -O - ${CMAKE_URL} | tar --strip-components=1 -xz -C cmake
       export PATH=${DEPS_DIR}/cmake/bin:${PATH}
+
+install:
+    - if [ "$CXX" = "g++" ]; then export CXX="g++-5" CC="gcc-5"; fi
 
 before_script:
     - cd ${TRAVIS_BUILD_DIR}
