@@ -178,8 +178,5 @@ vrm_check_target()
 add_subdirectory(generator)
 add_subdirectory(test)
 
-# Tests depend on generator.
-add_dependencies(tests generator_run)
-
 # Create header-only install target (automatically glob)
 vrm_cmake_header_only_install_glob("${VRM_PP_INC_DIR}" "include")

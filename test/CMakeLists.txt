@@ -5,6 +5,9 @@
 # Add a custom target for the unit tests.
 add_custom_target(tests COMMENT "Build all the unit tests.")
 
+# Tests depend on generator.
+add_dependencies(tests generator_run)
+
 # `check` depends on `tests`.
 add_dependencies(check tests)
 
