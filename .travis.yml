@@ -29,7 +29,7 @@ before_install:
 install:
     - if [ "$CXX" = "g++" ]; then export CXX="g++-5" CC="gcc-5"; fi
     - if [ "$CXX" = "clang++" ]; then export CXX="clang++-3.7" CC="clang-3.7"; fi
-    
+
 before_script:
     - cd ${TRAVIS_BUILD_DIR}
     - ./init-repository.sh
@@ -39,4 +39,4 @@ before_script:
 script:
     - cd ${TRAVIS_BUILD_DIR}
     - cd build    
-    - make -j check
+    - make -j4 check
