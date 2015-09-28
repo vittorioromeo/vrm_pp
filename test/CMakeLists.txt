@@ -61,3 +61,5 @@ foreach(_file IN LISTS VRM_PP_TEST_SOURCES)
     add_executable(${_target} EXCLUDE_FROM_ALL "${_file}")
     vrm_pp_add_unit_test(${_target} ${CMAKE_CURRENT_BINARY_DIR}/${_target})    
 endforeach()
+
+# TODO: extract macros/funcs
