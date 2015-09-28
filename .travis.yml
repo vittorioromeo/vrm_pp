@@ -3,6 +3,11 @@ os: linux
 sudo: false
 compiler: clang
 
+cache:
+    apt: true
+    directories:
+        - ${TRAVIS_BUILD_DIR}/deps
+
 addons:
     apt:
         sources:
