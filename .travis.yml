@@ -1,73 +1,26 @@
 language: cpp
 os: linux
 sudo: false
-compiler: clang
+
+compiler: 
+    - clang
+    - gcc
 
 cache:
     apt: true
     directories:
         - ${TRAVIS_BUILD_DIR}/deps
-
 addons:
     apt:
         sources:
             - ubuntu-toolchain-r-test
             - llvm-toolchain-precise
-            - llvm-toolchain-precise-3.6
+            - llvm-toolchain-precise-3.7
         packages:
-            - clang-3.6
-
-matrix:
-    include:
-        # Clang 3.6
-        - env: UNIT_TESTS=true COMPILER=clang++-3.6 CMAKE_OPTIONS="-DVRM_PP_ENABLE_MEMCHECK=ON"
-          addons: 
-            apt:
-                sources:
-                    - ubuntu-toolchain-r-test
-                    - llvm-toolchain-precise
-                    - llvm-toolchain-precise-3.6
-                packages:
-                    - clang-3.6
-                    - valgrind
-
-        # Clang 3.7
-        - env: UNIT_TESTS=true COMPILER=clang++-3.7 CMAKE_OPTIONS="-DVRM_PP_ENABLE_MEMCHECK=ON"
-          addons: 
-            apt:
-                sources:
-                    - ubuntu-toolchain-r-test
-                    - llvm-toolchain-precise
-                    - llvm-toolchain-precise-3.7
-                packages:
-                    - clang-3.7
-                    - valgrind
-
-        # Gcc 4.9
-        - env: UNIT_TESTS=true COMPILER=g++-4.9 CMAKE_OPTIONS="-DVRM_PP_ENABLE_MEMCHECK=ON"
-          addons:
-            apt:
-                sources:
-                    - ubuntu-toolchain-r-test
-                    - llvm-toolchain-precise
-                    - llvm-toolchain-precise-3.7
-                packages:
-                        - gcc-4.9
-                        - g++-4.9
-                        - valgrind
-
-        # Gcc 5.1
-        - env: UNIT_TESTS=true COMPILER=g++-5 CMAKE_OPTIONS="-DVRM_PP_ENABLE_MEMCHECK=ON"
-          addons:
-            apt:
-                sources:
-                    - ubuntu-toolchain-r-test
-                    - llvm-toolchain-precise
-                    - llvm-toolchain-precise-3.7
-                packages:
-                    - gcc-5
-                    - g++-5
-                    - valgrind
+            - clang-3.7
+            - gcc-5
+            - g++-5
+            - valgrind
 
 before_install:
     - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
@@ -85,5 +38,5 @@ before_script:
 
 script:
     - cd ${TRAVIS_BUILD_DIR}
-    - cd build
+    - cd build    
     - make -j check
