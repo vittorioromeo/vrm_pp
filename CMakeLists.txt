@@ -1,3 +1,5 @@
+cmake_minimum_required(VERSION 3.0)
+
 # Include SSVCmake.
 list(APPEND CMAKE_MODULE_PATH
     "${CMAKE_SOURCE_DIR}/../SSVCMake/cmake/modules/"
