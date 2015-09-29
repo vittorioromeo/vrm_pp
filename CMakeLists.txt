@@ -1,3 +1,8 @@
+# Include SSVCmake.
+list(APPEND CMAKE_MODULE_PATH
+    "${CMAKE_SOURCE_DIR}/../SSVCMake/cmake/modules/"
+    "${CMAKE_SOURCE_DIR}/extlibs/SSVCMake/cmake/modules/")
+
 include(SSVCMake)
 
 # Basic project setup.
