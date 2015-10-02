@@ -3,7 +3,7 @@
 
 int main()
 {
-    TEST_ASSERT(VRM_PP_ARGCOUNT() == 0);
+    // TEST_ASSERT(VRM_PP_ARGCOUNT() == 0);
     TEST_ASSERT(VRM_PP_ARGCOUNT(1) == 1);
     TEST_ASSERT(VRM_PP_ARGCOUNT(1, 1) == 2);
     TEST_ASSERT(VRM_PP_ARGCOUNT(1, 1, 1) == 3);
@@ -11,8 +11,8 @@ int main()
     TEST_ASSERT(VRM_PP_ARGCOUNT(1, 1, 1, 1, 1) == 5);
     TEST_ASSERT(VRM_PP_ARGCOUNT(1, 1, 1, 1, 1, 1) == 6);
 
-    TEST_ASSERT(VRM_PP_ARGCOUNT() == 0);
-    // TEST_ASSERT(VRM_PP_ARGCOUNT(()) == ());
+    // TEST_ASSERT(VRM_PP_ARGCOUNT() == 0);
+    TEST_ASSERT(VRM_PP_ARGCOUNT(()) == 1);
     TEST_ASSERT(VRM_PP_ARGCOUNT((), ()) == 2);
     TEST_ASSERT(VRM_PP_ARGCOUNT((), (), ()) == 3);
     TEST_ASSERT(VRM_PP_ARGCOUNT((), (), (), ()) == 4);
