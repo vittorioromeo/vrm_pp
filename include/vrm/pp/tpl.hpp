@@ -24,7 +24,7 @@
 #define VRM_PP_IMPL_TPL_ELEM_REVERSE(mTpl, mIdx)         \
     VRM_PP_TKNCAT_2(VRM_PP_IMPL_TPL_ELEM_REVERSE_, mIdx) \
     VRM_PP_DEFER(VRM_PP_TPL_FILL_REVERSE(mTpl))
-#define VRM_PP_IMPL_TPL_CAT(...)          \
+#define VRM_PP_IMPL_TPL_CAT(...) \
     VRM_PP_TKNCAT_2(VRM_PP_IMPL_TPL_CAT_, \
                     VRM_PP_ARGCOUNT(__VA_ARGS__))(__VA_ARGS__)
 #define VRM_PP_IMPL_TPL_SIZE(mTpl) VRM_PP_ARGCOUNT(VRM_PP_TPL_EXPLODE(mTpl))

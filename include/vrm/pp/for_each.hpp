@@ -9,7 +9,7 @@
 #include <vrm/pp/arg_count.hpp>
 #include <vrm/pp/arithmetic.hpp>
 
-#define VRM_PP_IMPL_FOREACH(mAction, mData, ...)                         \
+#define VRM_PP_IMPL_FOREACH(mAction, mData, ...) \
     VRM_PP_TKNCAT_2(VRM_PP_IMPL_FOREACH_, VRM_PP_ARGCOUNT(__VA_ARGS__))( \
         0, mAction, mData, __VA_ARGS__)
 #define VRM_PP_FOREACH(...) VRM_PP_IMPL_FOREACH(__VA_ARGS__)

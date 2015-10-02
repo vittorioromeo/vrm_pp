@@ -11,6 +11,6 @@ int main()
 
     TEST_ASSERT(VRM_PP_TPL_HEAD((1)) == 1);
     TEST_ASSERT(VRM_PP_TPL_TAIL((1)) == 1);
-   
+
     return 0;
 }

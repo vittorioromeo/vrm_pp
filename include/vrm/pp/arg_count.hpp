@@ -22,10 +22,9 @@
 #define VRM_PP_IMPL_NARGS_DISPATCH_1(mA, mB, mN) \
     VRM_PP_IMPL_NARGS_DISPATCH_2(mA, mB, mN)
 
-#define VRM_PP_IMPL_ARGCOUNT(...)                                          \
-    VRM_PP_IMPL_NARGS_DISPATCH_1(                                          \
-        VRM_PP_IMPL_NARGS_HASCOMMA(__VA_ARGS__),                           \
-        VRM_PP_IMPL_NARGS_HASCOMMA(VRM_PP_IMPL_NARGS_COMMA __VA_ARGS__()), \
-        VRM_PP_IMPL_N_ARG(__VA_ARGS__, VRM_PP_IMPL_RSEQ()))
+#define VRM_PP_IMPL_ARGCOUNT(...)                                         \
+    VRM_PP_IMPL_NARGS_DISPATCH_1(VRM_PP_IMPL_NARGS_HASCOMMA(__VA_ARGS__), \
+    VRM_PP_IMPL_NARGS_HASCOMMA(VRM_PP_IMPL_NARGS_COMMA __VA_ARGS__()),    \
+    VRM_PP_IMPL_N_ARG(__VA_ARGS__, VRM_PP_IMPL_RSEQ()))
 
 #define VRM_PP_ARGCOUNT(...) VRM_PP_IMPL_ARGCOUNT(__VA_ARGS__)

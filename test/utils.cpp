@@ -43,7 +43,7 @@ int main()
 
     {
         auto i =
-            VRM_PP_EXPAND(VRM_PP_EXPAND(VRM_PP_OBSTRUCT(TEMP_TEST_TEN_TX)()));
+        VRM_PP_EXPAND(VRM_PP_EXPAND(VRM_PP_OBSTRUCT(TEMP_TEST_TEN_TX)()));
         TEST_ASSERT_OP(i, ==, 10);
     }
 
@@ -54,7 +54,7 @@ int main()
 
     {
         auto i =
-            VRM_PP_EVAL(VRM_PP_EXPAND(VRM_PP_OBSTRUCT(TEMP_TEST_TEN_TX)()));
+        VRM_PP_EVAL(VRM_PP_EXPAND(VRM_PP_OBSTRUCT(TEMP_TEST_TEN_TX)()));
         TEST_ASSERT_OP(i, ==, 10);
     }
 
@@ -77,8 +77,7 @@ int main()
 #define REPEAT(count, macro, ...)                                       \
     WHEN(count)                                                         \
     (VRM_PP_OBSTRUCT(REPEAT_INDIRECT)()(VRM_PP_DECREMENT(count), macro, \
-                                        __VA_ARGS__)                    \
-         VRM_PP_OBSTRUCT(macro)(VRM_PP_DECREMENT(count), __VA_ARGS__))
+    __VA_ARGS__)VRM_PP_OBSTRUCT(macro)(VRM_PP_DECREMENT(count), __VA_ARGS__))
 
 #define TEMP_TEST_M(i, _) i
 
