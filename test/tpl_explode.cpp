@@ -24,12 +24,7 @@ int main()
     TEST_ASSERT(CTS_TE(a) == "a"s);
     TEST_ASSERT(CTS_TE(a, b) == "ab"s);
     TEST_ASSERT(CTS_TE(a, b, c) == "abc"s);
-
-    TEST_ASSERT(TS_TE() == ""s);
-    TEST_ASSERT(TS_TE(a) == "a"s);
-    TEST_ASSERT(TS_TE(a, b) == "a,b"s);
-    TEST_ASSERT(TS_TE(a, b, c) == "a,b,c"s);
-
+    
     TEST_ASSERT(TS_TE() == ""s);
     TEST_ASSERT(TS_TE(a) == "a"s);
     TEST_ASSERT(TS_TE(a, b) == "a, b"s);

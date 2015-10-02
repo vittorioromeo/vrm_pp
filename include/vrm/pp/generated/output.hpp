@@ -1,8 +1,7 @@
 // Copyright (c) 2015-2016 Vittorio Romeo
 // License: Academic Free License ("AFL") v. 3.0
 // AFL License page: http://opensource.org/licenses/AFL-3.0
-// http://vittorioromeo.info | vittorio.romeo@outlook.com// (auto-generated
-// file)
+// http://vittorioromeo.info | vittorio.romeo@outlook.com// (auto-generated file)
 
 #pragma once
 
@@ -780,3439 +779,1062 @@
 
 
 
-#define VRM_PP_IMPL_NSEQ(                                                     \
-m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17,   \
-m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32,    \
-m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47,    \
-m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62,    \
-m63, m64, m65, m66, m67, m68, m69, m70, m71, m72, m73, m74, m75, m76, m77,    \
-m78, m79, m80, m81, m82, m83, m84, m85, m86, m87, m88, m89, m90, m91, m92,    \
-m93, m94, m95, m96, m97, m98, m99, m100, m101, m102, m103, m104, m105, m106,  \
-m107, m108, m109, m110, m111, m112, m113, m114, m115, m116, m117, m118, m119, \
-m120, m121, m122, m123, m124, m125, m126, m127, mN, ...)                      \
-    mN
+#define VRM_PP_IMPL_NSEQ( m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63, m64, m65, m66, m67, m68, m69, m70, m71, m72, m73, m74, m75, m76, m77, m78, m79, m80, m81, m82, m83, m84, m85, m86, m87, m88, m89, m90, m91, m92, m93, m94, m95, m96, m97, m98, m99, m100, m101, m102, m103, m104, m105, m106, m107, m108, m109, m110, m111, m112, m113, m114, m115, m116, m117, m118, m119, m120, m121, m122, m123, m124, m125, m126, m127, mN, ...) mN
 
-#define VRM_PP_IMPL_RSEQ()                                                     \
-    127, 126, 125, 124, 123, 122, 121, 120, 119, 118, 117, 116, 115, 114, 113, \
-    112, 111, 110, 109, 108, 107, 106, 105, 104, 103, 102, 101, 100, 99, 98,   \
-    97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80,    \
-    79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62,    \
-    61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44,    \
-    43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26,    \
-    25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7,   \
-    6, 5, 4, 3, 2, 1, 0
-#define VRM_PP_IMPL_CSEQ()                                                     \
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, \
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, \
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, \
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, \
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, \
-    1, 0, 0
-#define VRM_PP_IMPL_CAT_0() VRM_PP_EMPTY()
-#define VRM_PP_IMPL_CAT_1(m0) VRM_PP_EXPAND(m0)
-#define VRM_PP_IMPL_CAT_2(m0, m1) VRM_PP_IMPL_CAT_1(VRM_PP_TKNCAT_2(m0, m1))
-#define VRM_PP_IMPL_CAT_3(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_2(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_4(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_3(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_5(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_4(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_6(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_5(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_7(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_6(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_8(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_7(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_9(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_8(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_10(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_9(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_11(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_10(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_12(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_11(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_13(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_12(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_14(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_13(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_15(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_14(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_16(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_15(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_17(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_16(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_18(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_17(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_19(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_18(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_20(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_19(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_21(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_20(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_22(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_21(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_23(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_22(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_24(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_23(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_25(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_24(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_26(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_25(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_27(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_26(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_28(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_27(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_29(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_28(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_30(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_29(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_31(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_30(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_32(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_31(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_33(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_32(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_34(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_33(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_35(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_34(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_36(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_35(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_37(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_36(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_38(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_37(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_39(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_38(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_40(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_39(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_41(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_40(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_42(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_41(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_43(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_42(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_44(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_43(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_45(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_44(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_46(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_45(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_47(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_46(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_48(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_47(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_49(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_48(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_50(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_49(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_51(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_50(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_52(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_51(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_53(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_52(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_54(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_53(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_55(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_54(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_56(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_55(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_57(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_56(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_58(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_57(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_59(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_58(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_60(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_59(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_61(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_60(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_62(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_61(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_63(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_62(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_64(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_63(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_65(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_64(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_66(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_65(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_67(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_66(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_68(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_67(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_69(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_68(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_70(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_69(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_71(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_70(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_72(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_71(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_73(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_72(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_74(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_73(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_75(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_74(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_76(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_75(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_77(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_76(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_78(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_77(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_79(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_78(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_80(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_79(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_81(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_80(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_82(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_81(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_83(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_82(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_84(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_83(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_85(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_84(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_86(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_85(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_87(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_86(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_88(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_87(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_89(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_88(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_90(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_89(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_91(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_90(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_92(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_91(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_93(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_92(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_94(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_93(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_95(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_94(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_96(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_95(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_97(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_96(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_98(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_97(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_99(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_98(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_100(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_99(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_101(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_100(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_102(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_101(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_103(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_102(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_104(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_103(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_105(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_104(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_106(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_105(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_107(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_106(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_108(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_107(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_109(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_108(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_110(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_109(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_111(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_110(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_112(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_111(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_113(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_112(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_114(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_113(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_115(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_114(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_116(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_115(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_117(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_116(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_118(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_117(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_119(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_118(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_120(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_119(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_121(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_120(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_122(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_121(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_123(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_122(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_124(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_123(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_125(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_124(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_126(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_125(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_127(m0, m1, ...) \
-    VRM_PP_IMPL_CAT_126(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_RSEQ()    127, 126, 125, 124, 123, 122, 121, 120, 119, 118, 117, 116, 115, 114, 113, 112, 111, 110, 109, 108, 107, 106, 105, 104, 103, 102, 101, 100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
+#define VRM_PP_IMPL_CSEQ()    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0
+#define VRM_PP_IMPL_CAT_0()           VRM_PP_EMPTY()
+#define VRM_PP_IMPL_CAT_1(m0)         VRM_PP_EXPAND(m0)
+#define VRM_PP_IMPL_CAT_2(m0, m1)     VRM_PP_IMPL_CAT_1(VRM_PP_TKNCAT_2(m0, m1))
+#define VRM_PP_IMPL_CAT_3(m0, m1, ...)   VRM_PP_IMPL_CAT_2(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_4(m0, m1, ...)   VRM_PP_IMPL_CAT_3(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_5(m0, m1, ...)   VRM_PP_IMPL_CAT_4(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_6(m0, m1, ...)   VRM_PP_IMPL_CAT_5(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_7(m0, m1, ...)   VRM_PP_IMPL_CAT_6(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_8(m0, m1, ...)   VRM_PP_IMPL_CAT_7(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_9(m0, m1, ...)   VRM_PP_IMPL_CAT_8(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_10(m0, m1, ...)   VRM_PP_IMPL_CAT_9(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_11(m0, m1, ...)   VRM_PP_IMPL_CAT_10(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_12(m0, m1, ...)   VRM_PP_IMPL_CAT_11(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_13(m0, m1, ...)   VRM_PP_IMPL_CAT_12(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_14(m0, m1, ...)   VRM_PP_IMPL_CAT_13(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_15(m0, m1, ...)   VRM_PP_IMPL_CAT_14(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_16(m0, m1, ...)   VRM_PP_IMPL_CAT_15(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_17(m0, m1, ...)   VRM_PP_IMPL_CAT_16(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_18(m0, m1, ...)   VRM_PP_IMPL_CAT_17(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_19(m0, m1, ...)   VRM_PP_IMPL_CAT_18(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_20(m0, m1, ...)   VRM_PP_IMPL_CAT_19(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_21(m0, m1, ...)   VRM_PP_IMPL_CAT_20(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_22(m0, m1, ...)   VRM_PP_IMPL_CAT_21(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_23(m0, m1, ...)   VRM_PP_IMPL_CAT_22(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_24(m0, m1, ...)   VRM_PP_IMPL_CAT_23(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_25(m0, m1, ...)   VRM_PP_IMPL_CAT_24(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_26(m0, m1, ...)   VRM_PP_IMPL_CAT_25(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_27(m0, m1, ...)   VRM_PP_IMPL_CAT_26(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_28(m0, m1, ...)   VRM_PP_IMPL_CAT_27(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_29(m0, m1, ...)   VRM_PP_IMPL_CAT_28(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_30(m0, m1, ...)   VRM_PP_IMPL_CAT_29(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_31(m0, m1, ...)   VRM_PP_IMPL_CAT_30(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_32(m0, m1, ...)   VRM_PP_IMPL_CAT_31(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_33(m0, m1, ...)   VRM_PP_IMPL_CAT_32(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_34(m0, m1, ...)   VRM_PP_IMPL_CAT_33(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_35(m0, m1, ...)   VRM_PP_IMPL_CAT_34(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_36(m0, m1, ...)   VRM_PP_IMPL_CAT_35(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_37(m0, m1, ...)   VRM_PP_IMPL_CAT_36(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_38(m0, m1, ...)   VRM_PP_IMPL_CAT_37(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_39(m0, m1, ...)   VRM_PP_IMPL_CAT_38(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_40(m0, m1, ...)   VRM_PP_IMPL_CAT_39(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_41(m0, m1, ...)   VRM_PP_IMPL_CAT_40(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_42(m0, m1, ...)   VRM_PP_IMPL_CAT_41(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_43(m0, m1, ...)   VRM_PP_IMPL_CAT_42(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_44(m0, m1, ...)   VRM_PP_IMPL_CAT_43(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_45(m0, m1, ...)   VRM_PP_IMPL_CAT_44(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_46(m0, m1, ...)   VRM_PP_IMPL_CAT_45(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_47(m0, m1, ...)   VRM_PP_IMPL_CAT_46(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_48(m0, m1, ...)   VRM_PP_IMPL_CAT_47(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_49(m0, m1, ...)   VRM_PP_IMPL_CAT_48(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_50(m0, m1, ...)   VRM_PP_IMPL_CAT_49(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_51(m0, m1, ...)   VRM_PP_IMPL_CAT_50(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_52(m0, m1, ...)   VRM_PP_IMPL_CAT_51(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_53(m0, m1, ...)   VRM_PP_IMPL_CAT_52(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_54(m0, m1, ...)   VRM_PP_IMPL_CAT_53(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_55(m0, m1, ...)   VRM_PP_IMPL_CAT_54(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_56(m0, m1, ...)   VRM_PP_IMPL_CAT_55(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_57(m0, m1, ...)   VRM_PP_IMPL_CAT_56(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_58(m0, m1, ...)   VRM_PP_IMPL_CAT_57(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_59(m0, m1, ...)   VRM_PP_IMPL_CAT_58(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_60(m0, m1, ...)   VRM_PP_IMPL_CAT_59(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_61(m0, m1, ...)   VRM_PP_IMPL_CAT_60(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_62(m0, m1, ...)   VRM_PP_IMPL_CAT_61(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_63(m0, m1, ...)   VRM_PP_IMPL_CAT_62(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_64(m0, m1, ...)   VRM_PP_IMPL_CAT_63(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_65(m0, m1, ...)   VRM_PP_IMPL_CAT_64(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_66(m0, m1, ...)   VRM_PP_IMPL_CAT_65(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_67(m0, m1, ...)   VRM_PP_IMPL_CAT_66(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_68(m0, m1, ...)   VRM_PP_IMPL_CAT_67(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_69(m0, m1, ...)   VRM_PP_IMPL_CAT_68(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_70(m0, m1, ...)   VRM_PP_IMPL_CAT_69(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_71(m0, m1, ...)   VRM_PP_IMPL_CAT_70(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_72(m0, m1, ...)   VRM_PP_IMPL_CAT_71(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_73(m0, m1, ...)   VRM_PP_IMPL_CAT_72(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_74(m0, m1, ...)   VRM_PP_IMPL_CAT_73(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_75(m0, m1, ...)   VRM_PP_IMPL_CAT_74(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_76(m0, m1, ...)   VRM_PP_IMPL_CAT_75(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_77(m0, m1, ...)   VRM_PP_IMPL_CAT_76(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_78(m0, m1, ...)   VRM_PP_IMPL_CAT_77(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_79(m0, m1, ...)   VRM_PP_IMPL_CAT_78(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_80(m0, m1, ...)   VRM_PP_IMPL_CAT_79(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_81(m0, m1, ...)   VRM_PP_IMPL_CAT_80(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_82(m0, m1, ...)   VRM_PP_IMPL_CAT_81(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_83(m0, m1, ...)   VRM_PP_IMPL_CAT_82(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_84(m0, m1, ...)   VRM_PP_IMPL_CAT_83(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_85(m0, m1, ...)   VRM_PP_IMPL_CAT_84(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_86(m0, m1, ...)   VRM_PP_IMPL_CAT_85(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_87(m0, m1, ...)   VRM_PP_IMPL_CAT_86(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_88(m0, m1, ...)   VRM_PP_IMPL_CAT_87(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_89(m0, m1, ...)   VRM_PP_IMPL_CAT_88(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_90(m0, m1, ...)   VRM_PP_IMPL_CAT_89(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_91(m0, m1, ...)   VRM_PP_IMPL_CAT_90(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_92(m0, m1, ...)   VRM_PP_IMPL_CAT_91(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_93(m0, m1, ...)   VRM_PP_IMPL_CAT_92(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_94(m0, m1, ...)   VRM_PP_IMPL_CAT_93(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_95(m0, m1, ...)   VRM_PP_IMPL_CAT_94(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_96(m0, m1, ...)   VRM_PP_IMPL_CAT_95(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_97(m0, m1, ...)   VRM_PP_IMPL_CAT_96(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_98(m0, m1, ...)   VRM_PP_IMPL_CAT_97(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_99(m0, m1, ...)   VRM_PP_IMPL_CAT_98(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_100(m0, m1, ...)   VRM_PP_IMPL_CAT_99(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_101(m0, m1, ...)   VRM_PP_IMPL_CAT_100(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_102(m0, m1, ...)   VRM_PP_IMPL_CAT_101(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_103(m0, m1, ...)   VRM_PP_IMPL_CAT_102(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_104(m0, m1, ...)   VRM_PP_IMPL_CAT_103(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_105(m0, m1, ...)   VRM_PP_IMPL_CAT_104(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_106(m0, m1, ...)   VRM_PP_IMPL_CAT_105(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_107(m0, m1, ...)   VRM_PP_IMPL_CAT_106(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_108(m0, m1, ...)   VRM_PP_IMPL_CAT_107(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_109(m0, m1, ...)   VRM_PP_IMPL_CAT_108(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_110(m0, m1, ...)   VRM_PP_IMPL_CAT_109(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_111(m0, m1, ...)   VRM_PP_IMPL_CAT_110(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_112(m0, m1, ...)   VRM_PP_IMPL_CAT_111(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_113(m0, m1, ...)   VRM_PP_IMPL_CAT_112(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_114(m0, m1, ...)   VRM_PP_IMPL_CAT_113(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_115(m0, m1, ...)   VRM_PP_IMPL_CAT_114(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_116(m0, m1, ...)   VRM_PP_IMPL_CAT_115(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_117(m0, m1, ...)   VRM_PP_IMPL_CAT_116(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_118(m0, m1, ...)   VRM_PP_IMPL_CAT_117(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_119(m0, m1, ...)   VRM_PP_IMPL_CAT_118(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_120(m0, m1, ...)   VRM_PP_IMPL_CAT_119(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_121(m0, m1, ...)   VRM_PP_IMPL_CAT_120(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_122(m0, m1, ...)   VRM_PP_IMPL_CAT_121(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_123(m0, m1, ...)   VRM_PP_IMPL_CAT_122(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_124(m0, m1, ...)   VRM_PP_IMPL_CAT_123(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_125(m0, m1, ...)   VRM_PP_IMPL_CAT_124(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_126(m0, m1, ...)   VRM_PP_IMPL_CAT_125(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
+#define VRM_PP_IMPL_CAT_127(m0, m1, ...)   VRM_PP_IMPL_CAT_126(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
 
 
 
-#define VRM_PP_IMPL_TPL_FILL_0(m0)                                             \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_1(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_2(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_3(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_4(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_5(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_6(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_7(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_8(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_9(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_10(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_11(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_12(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_13(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_14(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_15(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_16(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_17(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_18(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_19(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_20(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_21(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_22(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_23(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_24(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_25(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_26(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_27(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_28(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_29(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_30(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_31(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_32(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_33(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_34(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_35(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_36(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_37(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_38(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_39(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_40(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_41(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_42(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_43(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_44(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_45(m0) \
-    VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_46(m0) \
-    VRM_PP_TPL_EXPLODE(m0), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_47(m0) \
-    VRM_PP_TPL_EXPLODE(m0), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_48(m0) \
-    VRM_PP_TPL_EXPLODE(m0), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_49(m0) \
-    VRM_PP_TPL_EXPLODE(m0), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_50(m0) \
-    VRM_PP_TPL_EXPLODE(m0), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_51(m0) \
-    VRM_PP_TPL_EXPLODE(m0), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_52(m0) \
-    VRM_PP_TPL_EXPLODE(m0), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_53(m0) \
-    VRM_PP_TPL_EXPLODE(m0), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_54(m0) \
-    VRM_PP_TPL_EXPLODE(m0), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_55(m0) \
-    VRM_PP_TPL_EXPLODE(m0), 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_56(m0) \
-    VRM_PP_TPL_EXPLODE(m0), 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_57(m0) VRM_PP_TPL_EXPLODE(m0), 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_58(m0) VRM_PP_TPL_EXPLODE(m0), 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_59(m0) VRM_PP_TPL_EXPLODE(m0), 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_60(m0) VRM_PP_TPL_EXPLODE(m0), 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_61(m0) VRM_PP_TPL_EXPLODE(m0), 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_62(m0) VRM_PP_TPL_EXPLODE(m0), 0, 0
-#define VRM_PP_IMPL_TPL_FILL_63(m0) VRM_PP_TPL_EXPLODE(m0), 0
-#define VRM_PP_IMPL_TPL_FILL_64(m0) VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_0(m0)             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_1(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_2(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_3(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_4(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_5(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_6(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_7(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_8(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_9(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_10(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_11(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_12(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_13(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_14(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_15(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_16(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_17(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_18(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_19(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_20(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_21(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_22(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_23(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_24(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_25(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_26(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_27(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_28(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_29(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_30(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_31(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_32(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_33(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_34(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_35(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_36(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_37(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_38(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_39(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_40(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_41(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_42(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_43(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_44(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_45(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_46(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_47(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_48(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_49(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_50(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_51(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_52(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_53(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_54(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_55(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_56(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_57(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_58(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_59(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_60(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_61(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_62(m0) VRM_PP_TPL_EXPLODE(m0),  0, 0
+#define VRM_PP_IMPL_TPL_FILL_63(m0) VRM_PP_TPL_EXPLODE(m0),  0
+#define VRM_PP_IMPL_TPL_FILL_64(m0)   VRM_PP_TPL_EXPLODE(m0)
 
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_0(m0)                                     \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_1(m0)                                     \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_2(m0)                                     \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_3(m0)                                     \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_4(m0)                                     \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_5(m0)                                     \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_6(m0)                                     \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_7(m0)                                     \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_8(m0)                                     \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_9(m0)                                     \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_10(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_11(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_12(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_13(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_14(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_15(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,    \
-    VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_16(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,       \
-    VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_17(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,          \
-    VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_18(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,             \
-    VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_19(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,                \
-    VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_20(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,                   \
-    VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_21(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,                      \
-    VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_22(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_23(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_24(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_25(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_26(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_27(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_28(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_29(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_30(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_31(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_32(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_33(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_34(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_35(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_36(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_37(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_38(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_39(m0)                                    \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_40(m0)                                 \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_41(m0)                              \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_42(m0)                           \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_43(m0)                        \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_44(m0)                     \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_45(m0)                  \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \
-    VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_46(m0) \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_47(m0) \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_48(m0) \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_49(m0) \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_50(m0) \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_51(m0) \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_52(m0) \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_53(m0) \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_54(m0) \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_55(m0) \
-    0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_56(m0) \
-    0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_57(m0) \
-    0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_58(m0) \
-    0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_59(m0) \
-    0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_60(m0) 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_61(m0) 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_62(m0) 0, 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_63(m0) 0, VRM_PP_TPL_EXPLODE(m0)
-#define VRM_PP_IMPL_TPL_FILL_REVERSE_64(m0) VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_0(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_1(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_2(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_3(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_4(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_5(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_6(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_7(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_8(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_9(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_10(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_11(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_12(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_13(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_14(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_15(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_16(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_17(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_18(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_19(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_20(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_21(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_22(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_23(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_24(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_25(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_26(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_27(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_28(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_29(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_30(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_31(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_32(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_33(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_34(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_35(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_36(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_37(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_38(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_39(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_40(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_41(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_42(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_43(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_44(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_45(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_46(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_47(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_48(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_49(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_50(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_51(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_52(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_53(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_54(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_55(m0)  0, 0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_56(m0)  0, 0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_57(m0)  0, 0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_58(m0)  0, 0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_59(m0)  0, 0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_60(m0)  0, 0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_61(m0)  0, 0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_62(m0)  0, 0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_63(m0)  0, VRM_PP_TPL_EXPLODE(m0)
+#define VRM_PP_IMPL_TPL_FILL_REVERSE_64(m0)   VRM_PP_TPL_EXPLODE(m0)
 
-#define VRM_PP_IMPL_TPL_ELEM_0(                                            \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m0
-#define VRM_PP_IMPL_TPL_ELEM_1(                                            \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m1
-#define VRM_PP_IMPL_TPL_ELEM_2(                                            \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m2
-#define VRM_PP_IMPL_TPL_ELEM_3(                                            \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m3
-#define VRM_PP_IMPL_TPL_ELEM_4(                                            \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m4
-#define VRM_PP_IMPL_TPL_ELEM_5(                                            \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m5
-#define VRM_PP_IMPL_TPL_ELEM_6(                                            \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m6
-#define VRM_PP_IMPL_TPL_ELEM_7(                                            \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m7
-#define VRM_PP_IMPL_TPL_ELEM_8(                                            \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m8
-#define VRM_PP_IMPL_TPL_ELEM_9(                                            \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m9
-#define VRM_PP_IMPL_TPL_ELEM_10(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m10
-#define VRM_PP_IMPL_TPL_ELEM_11(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m11
-#define VRM_PP_IMPL_TPL_ELEM_12(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m12
-#define VRM_PP_IMPL_TPL_ELEM_13(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m13
-#define VRM_PP_IMPL_TPL_ELEM_14(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m14
-#define VRM_PP_IMPL_TPL_ELEM_15(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m15
-#define VRM_PP_IMPL_TPL_ELEM_16(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m16
-#define VRM_PP_IMPL_TPL_ELEM_17(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m17
-#define VRM_PP_IMPL_TPL_ELEM_18(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m18
-#define VRM_PP_IMPL_TPL_ELEM_19(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m19
-#define VRM_PP_IMPL_TPL_ELEM_20(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m20
-#define VRM_PP_IMPL_TPL_ELEM_21(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m21
-#define VRM_PP_IMPL_TPL_ELEM_22(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m22
-#define VRM_PP_IMPL_TPL_ELEM_23(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m23
-#define VRM_PP_IMPL_TPL_ELEM_24(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m24
-#define VRM_PP_IMPL_TPL_ELEM_25(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m25
-#define VRM_PP_IMPL_TPL_ELEM_26(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m26
-#define VRM_PP_IMPL_TPL_ELEM_27(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m27
-#define VRM_PP_IMPL_TPL_ELEM_28(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m28
-#define VRM_PP_IMPL_TPL_ELEM_29(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m29
-#define VRM_PP_IMPL_TPL_ELEM_30(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m30
-#define VRM_PP_IMPL_TPL_ELEM_31(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m31
-#define VRM_PP_IMPL_TPL_ELEM_32(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m32
-#define VRM_PP_IMPL_TPL_ELEM_33(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m33
-#define VRM_PP_IMPL_TPL_ELEM_34(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m34
-#define VRM_PP_IMPL_TPL_ELEM_35(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m35
-#define VRM_PP_IMPL_TPL_ELEM_36(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m36
-#define VRM_PP_IMPL_TPL_ELEM_37(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m37
-#define VRM_PP_IMPL_TPL_ELEM_38(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m38
-#define VRM_PP_IMPL_TPL_ELEM_39(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m39
-#define VRM_PP_IMPL_TPL_ELEM_40(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m40
-#define VRM_PP_IMPL_TPL_ELEM_41(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m41
-#define VRM_PP_IMPL_TPL_ELEM_42(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m42
-#define VRM_PP_IMPL_TPL_ELEM_43(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m43
-#define VRM_PP_IMPL_TPL_ELEM_44(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m44
-#define VRM_PP_IMPL_TPL_ELEM_45(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m45
-#define VRM_PP_IMPL_TPL_ELEM_46(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m46
-#define VRM_PP_IMPL_TPL_ELEM_47(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m47
-#define VRM_PP_IMPL_TPL_ELEM_48(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m48
-#define VRM_PP_IMPL_TPL_ELEM_49(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m49
-#define VRM_PP_IMPL_TPL_ELEM_50(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m50
-#define VRM_PP_IMPL_TPL_ELEM_51(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m51
-#define VRM_PP_IMPL_TPL_ELEM_52(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m52
-#define VRM_PP_IMPL_TPL_ELEM_53(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m53
-#define VRM_PP_IMPL_TPL_ELEM_54(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m54
-#define VRM_PP_IMPL_TPL_ELEM_55(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m55
-#define VRM_PP_IMPL_TPL_ELEM_56(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m56
-#define VRM_PP_IMPL_TPL_ELEM_57(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m57
-#define VRM_PP_IMPL_TPL_ELEM_58(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m58
-#define VRM_PP_IMPL_TPL_ELEM_59(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m59
-#define VRM_PP_IMPL_TPL_ELEM_60(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m60
-#define VRM_PP_IMPL_TPL_ELEM_61(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m61
-#define VRM_PP_IMPL_TPL_ELEM_62(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m62
-#define VRM_PP_IMPL_TPL_ELEM_63(                                           \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m63
+#define VRM_PP_IMPL_TPL_ELEM_0(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m0
+#define VRM_PP_IMPL_TPL_ELEM_1(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m1
+#define VRM_PP_IMPL_TPL_ELEM_2(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m2
+#define VRM_PP_IMPL_TPL_ELEM_3(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m3
+#define VRM_PP_IMPL_TPL_ELEM_4(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m4
+#define VRM_PP_IMPL_TPL_ELEM_5(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m5
+#define VRM_PP_IMPL_TPL_ELEM_6(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m6
+#define VRM_PP_IMPL_TPL_ELEM_7(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m7
+#define VRM_PP_IMPL_TPL_ELEM_8(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m8
+#define VRM_PP_IMPL_TPL_ELEM_9(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m9
+#define VRM_PP_IMPL_TPL_ELEM_10(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m10
+#define VRM_PP_IMPL_TPL_ELEM_11(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m11
+#define VRM_PP_IMPL_TPL_ELEM_12(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m12
+#define VRM_PP_IMPL_TPL_ELEM_13(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m13
+#define VRM_PP_IMPL_TPL_ELEM_14(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m14
+#define VRM_PP_IMPL_TPL_ELEM_15(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m15
+#define VRM_PP_IMPL_TPL_ELEM_16(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m16
+#define VRM_PP_IMPL_TPL_ELEM_17(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m17
+#define VRM_PP_IMPL_TPL_ELEM_18(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m18
+#define VRM_PP_IMPL_TPL_ELEM_19(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m19
+#define VRM_PP_IMPL_TPL_ELEM_20(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m20
+#define VRM_PP_IMPL_TPL_ELEM_21(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m21
+#define VRM_PP_IMPL_TPL_ELEM_22(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m22
+#define VRM_PP_IMPL_TPL_ELEM_23(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m23
+#define VRM_PP_IMPL_TPL_ELEM_24(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m24
+#define VRM_PP_IMPL_TPL_ELEM_25(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m25
+#define VRM_PP_IMPL_TPL_ELEM_26(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m26
+#define VRM_PP_IMPL_TPL_ELEM_27(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m27
+#define VRM_PP_IMPL_TPL_ELEM_28(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m28
+#define VRM_PP_IMPL_TPL_ELEM_29(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m29
+#define VRM_PP_IMPL_TPL_ELEM_30(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m30
+#define VRM_PP_IMPL_TPL_ELEM_31(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m31
+#define VRM_PP_IMPL_TPL_ELEM_32(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m32
+#define VRM_PP_IMPL_TPL_ELEM_33(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m33
+#define VRM_PP_IMPL_TPL_ELEM_34(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m34
+#define VRM_PP_IMPL_TPL_ELEM_35(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m35
+#define VRM_PP_IMPL_TPL_ELEM_36(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m36
+#define VRM_PP_IMPL_TPL_ELEM_37(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m37
+#define VRM_PP_IMPL_TPL_ELEM_38(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m38
+#define VRM_PP_IMPL_TPL_ELEM_39(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m39
+#define VRM_PP_IMPL_TPL_ELEM_40(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m40
+#define VRM_PP_IMPL_TPL_ELEM_41(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m41
+#define VRM_PP_IMPL_TPL_ELEM_42(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m42
+#define VRM_PP_IMPL_TPL_ELEM_43(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m43
+#define VRM_PP_IMPL_TPL_ELEM_44(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m44
+#define VRM_PP_IMPL_TPL_ELEM_45(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m45
+#define VRM_PP_IMPL_TPL_ELEM_46(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m46
+#define VRM_PP_IMPL_TPL_ELEM_47(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m47
+#define VRM_PP_IMPL_TPL_ELEM_48(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m48
+#define VRM_PP_IMPL_TPL_ELEM_49(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m49
+#define VRM_PP_IMPL_TPL_ELEM_50(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m50
+#define VRM_PP_IMPL_TPL_ELEM_51(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m51
+#define VRM_PP_IMPL_TPL_ELEM_52(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m52
+#define VRM_PP_IMPL_TPL_ELEM_53(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m53
+#define VRM_PP_IMPL_TPL_ELEM_54(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m54
+#define VRM_PP_IMPL_TPL_ELEM_55(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m55
+#define VRM_PP_IMPL_TPL_ELEM_56(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m56
+#define VRM_PP_IMPL_TPL_ELEM_57(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m57
+#define VRM_PP_IMPL_TPL_ELEM_58(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m58
+#define VRM_PP_IMPL_TPL_ELEM_59(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m59
+#define VRM_PP_IMPL_TPL_ELEM_60(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m60
+#define VRM_PP_IMPL_TPL_ELEM_61(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m61
+#define VRM_PP_IMPL_TPL_ELEM_62(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m62
+#define VRM_PP_IMPL_TPL_ELEM_63(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m63
 
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_0(                                    \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m63
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_1(                                    \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m62
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_2(                                    \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m61
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_3(                                    \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m60
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_4(                                    \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m59
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_5(                                    \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m58
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_6(                                    \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m57
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_7(                                    \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m56
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_8(                                    \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m55
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_9(                                    \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m54
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_10(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m53
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_11(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m52
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_12(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m51
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_13(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m50
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_14(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m49
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_15(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m48
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_16(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m47
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_17(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m46
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_18(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m45
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_19(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m44
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_20(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m43
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_21(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m42
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_22(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m41
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_23(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m40
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_24(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m39
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_25(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m38
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_26(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m37
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_27(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m36
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_28(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m35
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_29(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m34
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_30(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m33
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_31(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m32
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_32(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m31
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_33(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m30
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_34(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m29
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_35(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m28
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_36(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m27
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_37(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m26
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_38(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m25
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_39(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m24
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_40(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m23
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_41(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m22
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_42(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m21
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_43(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m20
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_44(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m19
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_45(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m18
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_46(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m17
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_47(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m16
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_48(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m15
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_49(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m14
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_50(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m13
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_51(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m12
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_52(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m11
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_53(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m10
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_54(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m9
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_55(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m8
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_56(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m7
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_57(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m6
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_58(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m5
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_59(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m4
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_60(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m3
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_61(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m2
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_62(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m1
-#define VRM_PP_IMPL_TPL_ELEM_REVERSE_63(                                   \
-m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, \
-m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, \
-m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, \
-m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, \
-m62, m63)                                                                  \
-    m0
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_0(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m63
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_1(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m62
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_2(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m61
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_3(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m60
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_4(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m59
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_5(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m58
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_6(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m57
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_7(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m56
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_8(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m55
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_9(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m54
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_10(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m53
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_11(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m52
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_12(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m51
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_13(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m50
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_14(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m49
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_15(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m48
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_16(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m47
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_17(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m46
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_18(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m45
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_19(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m44
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_20(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m43
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_21(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m42
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_22(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m41
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_23(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m40
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_24(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m39
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_25(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m38
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_26(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m37
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_27(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m36
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_28(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m35
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_29(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m34
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_30(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m33
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_31(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m32
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_32(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m31
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_33(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m30
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_34(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m29
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_35(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m28
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_36(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m27
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_37(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m26
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_38(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m25
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_39(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m24
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_40(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m23
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_41(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m22
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_42(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m21
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_43(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m20
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_44(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m19
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_45(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m18
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_46(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m17
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_47(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m16
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_48(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m15
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_49(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m14
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_50(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m13
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_51(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m12
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_52(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m11
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_53(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m10
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_54(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m9
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_55(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m8
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_56(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m7
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_57(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m6
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_58(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m5
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_59(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m4
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_60(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m3
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_61(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m2
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_62(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m1
+#define VRM_PP_IMPL_TPL_ELEM_REVERSE_63(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63) m0
 
-#define VRM_PP_IMPL_TPL_CAT_0() VRM_PP_EMPTY()
-#define VRM_PP_IMPL_TPL_CAT_1(m0) m0
-#define VRM_PP_IMPL_TPL_CAT_2(m0, m1) \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1))
-#define VRM_PP_IMPL_TPL_CAT_3(m0, m1, ...)                           \
-    VRM_PP_IMPL_TPL_CAT_2(                                           \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_4(m0, m1, ...)                           \
-    VRM_PP_IMPL_TPL_CAT_3(                                           \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_5(m0, m1, ...)                           \
-    VRM_PP_IMPL_TPL_CAT_4(                                           \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_6(m0, m1, ...)                           \
-    VRM_PP_IMPL_TPL_CAT_5(                                           \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_7(m0, m1, ...)                           \
-    VRM_PP_IMPL_TPL_CAT_6(                                           \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_8(m0, m1, ...)                           \
-    VRM_PP_IMPL_TPL_CAT_7(                                           \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_9(m0, m1, ...)                           \
-    VRM_PP_IMPL_TPL_CAT_8(                                           \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_10(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_9(                                           \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_11(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_10(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_12(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_11(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_13(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_12(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_14(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_13(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_15(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_14(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_16(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_15(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_17(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_16(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_18(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_17(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_19(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_18(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_20(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_19(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_21(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_20(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_22(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_21(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_23(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_22(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_24(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_23(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_25(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_24(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_26(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_25(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_27(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_26(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_28(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_27(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_29(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_28(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_30(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_29(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_31(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_30(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_32(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_31(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_33(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_32(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_34(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_33(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_35(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_34(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_36(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_35(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_37(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_36(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_38(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_37(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_39(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_38(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_40(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_39(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_41(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_40(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_42(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_41(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_43(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_42(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_44(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_43(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_45(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_44(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_46(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_45(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_47(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_46(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_48(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_47(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_49(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_48(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_50(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_49(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_51(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_50(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_52(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_51(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_53(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_52(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_54(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_53(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_55(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_54(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_56(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_55(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_57(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_56(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_58(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_57(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_59(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_58(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_60(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_59(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_61(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_60(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_62(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_61(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_63(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_62(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_64(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_63(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_65(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_64(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_66(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_65(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_67(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_66(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_68(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_67(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_69(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_68(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_70(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_69(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_71(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_70(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_72(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_71(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_73(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_72(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_74(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_73(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_75(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_74(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_76(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_75(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_77(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_76(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_78(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_77(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_79(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_78(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_80(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_79(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_81(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_80(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_82(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_81(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_83(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_82(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_84(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_83(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_85(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_84(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_86(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_85(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_87(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_86(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_88(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_87(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_89(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_88(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_90(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_89(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_91(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_90(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_92(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_91(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_93(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_92(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_94(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_93(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_95(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_94(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_96(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_95(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_97(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_96(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_98(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_97(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_99(m0, m1, ...)                          \
-    VRM_PP_IMPL_TPL_CAT_98(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_100(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_99(                                          \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_101(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_100(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_102(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_101(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_103(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_102(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_104(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_103(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_105(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_104(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_106(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_105(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_107(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_106(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_108(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_107(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_109(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_108(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_110(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_109(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_111(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_110(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_112(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_111(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_113(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_112(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_114(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_113(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_115(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_114(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_116(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_115(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_117(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_116(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_118(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_117(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_119(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_118(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_120(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_119(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_121(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_120(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_122(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_121(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_123(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_122(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_124(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_123(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_125(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_124(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_126(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_125(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_127(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_126(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
-#define VRM_PP_IMPL_TPL_CAT_128(m0, m1, ...)                         \
-    VRM_PP_IMPL_TPL_CAT_127(                                         \
-    VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), \
-    __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_0()           VRM_PP_EMPTY()
+#define VRM_PP_IMPL_TPL_CAT_1(m0)         m0
+#define VRM_PP_IMPL_TPL_CAT_2(m0, m1)     VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1))
+#define VRM_PP_IMPL_TPL_CAT_3(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_2(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_4(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_3(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_5(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_4(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_6(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_5(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_7(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_6(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_8(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_7(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_9(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_8(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_10(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_9(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_11(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_10(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_12(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_11(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_13(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_12(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_14(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_13(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_15(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_14(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_16(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_15(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_17(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_16(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_18(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_17(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_19(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_18(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_20(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_19(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_21(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_20(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_22(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_21(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_23(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_22(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_24(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_23(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_25(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_24(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_26(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_25(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_27(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_26(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_28(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_27(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_29(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_28(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_30(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_29(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_31(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_30(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_32(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_31(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_33(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_32(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_34(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_33(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_35(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_34(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_36(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_35(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_37(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_36(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_38(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_37(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_39(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_38(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_40(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_39(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_41(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_40(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_42(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_41(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_43(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_42(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_44(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_43(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_45(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_44(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_46(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_45(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_47(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_46(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_48(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_47(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_49(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_48(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_50(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_49(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_51(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_50(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_52(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_51(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_53(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_52(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_54(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_53(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_55(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_54(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_56(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_55(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_57(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_56(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_58(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_57(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_59(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_58(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_60(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_59(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_61(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_60(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_62(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_61(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_63(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_62(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_64(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_63(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_65(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_64(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_66(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_65(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_67(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_66(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_68(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_67(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_69(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_68(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_70(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_69(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_71(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_70(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_72(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_71(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_73(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_72(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_74(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_73(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_75(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_74(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_76(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_75(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_77(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_76(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_78(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_77(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_79(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_78(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_80(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_79(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_81(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_80(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_82(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_81(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_83(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_82(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_84(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_83(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_85(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_84(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_86(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_85(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_87(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_86(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_88(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_87(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_89(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_88(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_90(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_89(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_91(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_90(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_92(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_91(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_93(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_92(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_94(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_93(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_95(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_94(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_96(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_95(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_97(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_96(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_98(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_97(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_99(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_98(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_100(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_99(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_101(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_100(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_102(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_101(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_103(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_102(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_104(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_103(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_105(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_104(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_106(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_105(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_107(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_106(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_108(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_107(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_109(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_108(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_110(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_109(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_111(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_110(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_112(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_111(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_113(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_112(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_114(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_113(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_115(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_114(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_116(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_115(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_117(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_116(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_118(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_117(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_119(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_118(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_120(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_119(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_121(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_120(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_122(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_121(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_123(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_122(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_124(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_123(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_125(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_124(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_126(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_125(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_127(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_126(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
+#define VRM_PP_IMPL_TPL_CAT_128(m0, m1, ...)  VRM_PP_IMPL_TPL_CAT_127(VRM_PP_TPL_MAKE(VRM_PP_TPL_EXPLODE(m0), VRM_PP_TPL_EXPLODE(m1)), __VA_ARGS__)
 
 #define VRM_PP_TPL_MAX_SIZE 64
 
 
 
-#define VRM_PP_IMPL_FOREACH_0(mLast, mAction, mData)
-#define VRM_PP_IMPL_FOREACH_1(mLast, mAction, mData, mA0) \
-    mAction(mLast, mData, mA0)
-#define VRM_PP_IMPL_FOREACH_2(mLast, mAction, mData, mA0, mA1) \
-    mAction(mLast, mData, mA0)                                 \
-    VRM_PP_IMPL_FOREACH_1(VRM_PP_INCREMENT(mLast), mAction, mData, mA1)
-#define VRM_PP_IMPL_FOREACH_3(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_2(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_4(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_3(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_5(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_4(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_6(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_5(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_7(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_6(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_8(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_7(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_9(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_8(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_10(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_9(                \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_11(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_10(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_12(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_11(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_13(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_12(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_14(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_13(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_15(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_14(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_16(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_15(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_17(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_16(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_18(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_17(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_19(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_18(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_20(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_19(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_21(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_20(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_22(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_21(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_23(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_22(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_24(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_23(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_25(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_24(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_26(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_25(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_27(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_26(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_28(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_27(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_29(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_28(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_30(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_29(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_31(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_30(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_32(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_31(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_33(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_32(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_34(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_33(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_35(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_34(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_36(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_35(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_37(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_36(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_38(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_37(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_39(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_38(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_40(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_39(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_41(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_40(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_42(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_41(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_43(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_42(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_44(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_43(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_45(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_44(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_46(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_45(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_47(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_46(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_48(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_47(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_49(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_48(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_50(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_49(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_51(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_50(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_52(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_51(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_53(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_52(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_54(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_53(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_55(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_54(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_56(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_55(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_57(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_56(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_58(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_57(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_59(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_58(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_60(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_59(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_61(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_60(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_62(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_61(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_63(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_62(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_64(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_63(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_65(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_64(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_66(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_65(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_67(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_66(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_68(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_67(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_69(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_68(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_70(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_69(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_71(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_70(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_72(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_71(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_73(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_72(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_74(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_73(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_75(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_74(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_76(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_75(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_77(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_76(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_78(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_77(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_79(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_78(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_80(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_79(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_81(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_80(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_82(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_81(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_83(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_82(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_84(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_83(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_85(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_84(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_86(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_85(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_87(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_86(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_88(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_87(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_89(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_88(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_90(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_89(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_91(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_90(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_92(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_91(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_93(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_92(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_94(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_93(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_95(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_94(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_96(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_95(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_97(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_96(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_98(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_97(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_99(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_98(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_100(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_99(                \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_101(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_100(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_102(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_101(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_103(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_102(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_104(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_103(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_105(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_104(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_106(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_105(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_107(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_106(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_108(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_107(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_109(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_108(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_110(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_109(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_111(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_110(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_112(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_111(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_113(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_112(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_114(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_113(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_115(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_114(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_116(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_115(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_117(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_116(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_118(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_117(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_119(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_118(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_120(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_119(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_121(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_120(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_122(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_121(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_123(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_122(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_124(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_123(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_125(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_124(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_126(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_125(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_127(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_126(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_128(mLast, mAction, mData, mA0, mA1, ...) \
-    mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_127(               \
-    VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_0(mLast, mAction, mData)                  
+#define VRM_PP_IMPL_FOREACH_1(mLast, mAction, mData, mA0)             mAction(mLast, mData, mA0)
+#define VRM_PP_IMPL_FOREACH_2(mLast, mAction, mData, mA0, mA1)        mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_1(VRM_PP_INCREMENT(mLast), mAction, mData, mA1)
+#define VRM_PP_IMPL_FOREACH_3(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_2(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_4(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_3(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_5(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_4(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_6(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_5(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_7(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_6(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_8(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_7(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_9(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_8(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_10(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_9(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_11(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_10(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_12(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_11(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_13(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_12(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_14(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_13(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_15(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_14(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_16(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_15(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_17(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_16(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_18(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_17(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_19(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_18(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_20(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_19(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_21(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_20(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_22(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_21(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_23(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_22(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_24(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_23(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_25(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_24(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_26(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_25(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_27(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_26(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_28(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_27(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_29(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_28(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_30(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_29(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_31(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_30(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_32(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_31(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_33(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_32(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_34(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_33(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_35(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_34(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_36(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_35(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_37(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_36(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_38(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_37(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_39(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_38(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_40(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_39(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_41(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_40(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_42(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_41(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_43(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_42(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_44(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_43(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_45(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_44(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_46(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_45(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_47(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_46(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_48(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_47(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_49(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_48(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_50(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_49(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_51(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_50(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_52(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_51(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_53(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_52(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_54(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_53(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_55(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_54(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_56(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_55(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_57(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_56(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_58(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_57(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_59(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_58(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_60(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_59(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_61(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_60(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_62(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_61(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_63(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_62(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_64(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_63(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_65(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_64(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_66(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_65(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_67(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_66(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_68(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_67(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_69(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_68(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_70(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_69(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_71(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_70(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_72(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_71(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_73(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_72(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_74(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_73(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_75(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_74(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_76(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_75(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_77(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_76(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_78(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_77(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_79(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_78(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_80(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_79(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_81(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_80(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_82(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_81(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_83(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_82(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_84(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_83(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_85(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_84(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_86(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_85(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_87(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_86(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_88(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_87(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_89(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_88(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_90(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_89(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_91(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_90(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_92(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_91(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_93(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_92(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_94(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_93(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_95(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_94(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_96(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_95(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_97(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_96(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_98(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_97(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_99(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_98(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_100(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_99(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_101(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_100(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_102(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_101(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_103(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_102(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_104(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_103(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_105(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_104(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_106(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_105(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_107(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_106(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_108(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_107(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_109(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_108(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_110(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_109(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_111(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_110(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_112(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_111(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_113(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_112(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_114(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_113(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_115(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_114(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_116(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_115(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_117(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_116(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_118(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_117(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_119(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_118(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_120(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_119(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_121(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_120(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_122(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_121(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_123(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_122(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_124(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_123(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_125(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_124(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_126(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_125(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_127(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_126(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_128(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_127(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
 
 
-#define VRM_PP_IMPL_FOREACH_REVERSE_0(mAction, mData)
-#define VRM_PP_IMPL_FOREACH_REVERSE_1(mAction, mData, mA0) \
-    mAction(0, mData, mA0)
-#define VRM_PP_IMPL_FOREACH_REVERSE_2(mAction, mData, mA0, mA1) \
-    mAction(1, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_1(mAction, mData, mA1)
-#define VRM_PP_IMPL_FOREACH_REVERSE_3(mAction, mData, mA0, mA1, ...) \
-    mAction(2, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_2(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_4(mAction, mData, mA0, mA1, ...) \
-    mAction(3, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_3(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_5(mAction, mData, mA0, mA1, ...) \
-    mAction(4, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_4(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_6(mAction, mData, mA0, mA1, ...) \
-    mAction(5, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_5(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_7(mAction, mData, mA0, mA1, ...) \
-    mAction(6, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_6(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_8(mAction, mData, mA0, mA1, ...) \
-    mAction(7, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_7(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_9(mAction, mData, mA0, mA1, ...) \
-    mAction(8, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_8(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_10(mAction, mData, mA0, mA1, ...) \
-    mAction(9, mData, mA0)                                            \
-    VRM_PP_IMPL_FOREACH_REVERSE_9(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_11(mAction, mData, mA0, mA1, ...) \
-    mAction(10, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_10(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_12(mAction, mData, mA0, mA1, ...) \
-    mAction(11, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_11(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_13(mAction, mData, mA0, mA1, ...) \
-    mAction(12, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_12(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_14(mAction, mData, mA0, mA1, ...) \
-    mAction(13, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_13(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_15(mAction, mData, mA0, mA1, ...) \
-    mAction(14, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_14(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_16(mAction, mData, mA0, mA1, ...) \
-    mAction(15, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_15(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_17(mAction, mData, mA0, mA1, ...) \
-    mAction(16, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_16(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_18(mAction, mData, mA0, mA1, ...) \
-    mAction(17, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_17(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_19(mAction, mData, mA0, mA1, ...) \
-    mAction(18, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_18(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_20(mAction, mData, mA0, mA1, ...) \
-    mAction(19, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_19(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_21(mAction, mData, mA0, mA1, ...) \
-    mAction(20, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_20(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_22(mAction, mData, mA0, mA1, ...) \
-    mAction(21, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_21(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_23(mAction, mData, mA0, mA1, ...) \
-    mAction(22, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_22(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_24(mAction, mData, mA0, mA1, ...) \
-    mAction(23, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_23(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_25(mAction, mData, mA0, mA1, ...) \
-    mAction(24, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_24(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_26(mAction, mData, mA0, mA1, ...) \
-    mAction(25, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_25(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_27(mAction, mData, mA0, mA1, ...) \
-    mAction(26, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_26(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_28(mAction, mData, mA0, mA1, ...) \
-    mAction(27, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_27(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_29(mAction, mData, mA0, mA1, ...) \
-    mAction(28, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_28(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_30(mAction, mData, mA0, mA1, ...) \
-    mAction(29, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_29(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_31(mAction, mData, mA0, mA1, ...) \
-    mAction(30, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_30(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_32(mAction, mData, mA0, mA1, ...) \
-    mAction(31, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_31(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_33(mAction, mData, mA0, mA1, ...) \
-    mAction(32, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_32(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_34(mAction, mData, mA0, mA1, ...) \
-    mAction(33, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_33(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_35(mAction, mData, mA0, mA1, ...) \
-    mAction(34, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_34(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_36(mAction, mData, mA0, mA1, ...) \
-    mAction(35, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_35(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_37(mAction, mData, mA0, mA1, ...) \
-    mAction(36, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_36(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_38(mAction, mData, mA0, mA1, ...) \
-    mAction(37, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_37(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_39(mAction, mData, mA0, mA1, ...) \
-    mAction(38, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_38(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_40(mAction, mData, mA0, mA1, ...) \
-    mAction(39, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_39(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_41(mAction, mData, mA0, mA1, ...) \
-    mAction(40, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_40(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_42(mAction, mData, mA0, mA1, ...) \
-    mAction(41, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_41(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_43(mAction, mData, mA0, mA1, ...) \
-    mAction(42, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_42(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_44(mAction, mData, mA0, mA1, ...) \
-    mAction(43, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_43(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_45(mAction, mData, mA0, mA1, ...) \
-    mAction(44, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_44(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_46(mAction, mData, mA0, mA1, ...) \
-    mAction(45, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_45(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_47(mAction, mData, mA0, mA1, ...) \
-    mAction(46, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_46(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_48(mAction, mData, mA0, mA1, ...) \
-    mAction(47, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_47(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_49(mAction, mData, mA0, mA1, ...) \
-    mAction(48, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_48(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_50(mAction, mData, mA0, mA1, ...) \
-    mAction(49, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_49(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_51(mAction, mData, mA0, mA1, ...) \
-    mAction(50, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_50(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_52(mAction, mData, mA0, mA1, ...) \
-    mAction(51, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_51(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_53(mAction, mData, mA0, mA1, ...) \
-    mAction(52, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_52(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_54(mAction, mData, mA0, mA1, ...) \
-    mAction(53, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_53(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_55(mAction, mData, mA0, mA1, ...) \
-    mAction(54, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_54(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_56(mAction, mData, mA0, mA1, ...) \
-    mAction(55, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_55(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_57(mAction, mData, mA0, mA1, ...) \
-    mAction(56, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_56(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_58(mAction, mData, mA0, mA1, ...) \
-    mAction(57, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_57(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_59(mAction, mData, mA0, mA1, ...) \
-    mAction(58, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_58(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_60(mAction, mData, mA0, mA1, ...) \
-    mAction(59, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_59(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_61(mAction, mData, mA0, mA1, ...) \
-    mAction(60, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_60(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_62(mAction, mData, mA0, mA1, ...) \
-    mAction(61, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_61(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_63(mAction, mData, mA0, mA1, ...) \
-    mAction(62, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_62(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_64(mAction, mData, mA0, mA1, ...) \
-    mAction(63, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_63(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_65(mAction, mData, mA0, mA1, ...) \
-    mAction(64, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_64(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_66(mAction, mData, mA0, mA1, ...) \
-    mAction(65, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_65(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_67(mAction, mData, mA0, mA1, ...) \
-    mAction(66, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_66(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_68(mAction, mData, mA0, mA1, ...) \
-    mAction(67, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_67(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_69(mAction, mData, mA0, mA1, ...) \
-    mAction(68, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_68(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_70(mAction, mData, mA0, mA1, ...) \
-    mAction(69, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_69(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_71(mAction, mData, mA0, mA1, ...) \
-    mAction(70, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_70(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_72(mAction, mData, mA0, mA1, ...) \
-    mAction(71, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_71(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_73(mAction, mData, mA0, mA1, ...) \
-    mAction(72, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_72(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_74(mAction, mData, mA0, mA1, ...) \
-    mAction(73, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_73(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_75(mAction, mData, mA0, mA1, ...) \
-    mAction(74, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_74(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_76(mAction, mData, mA0, mA1, ...) \
-    mAction(75, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_75(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_77(mAction, mData, mA0, mA1, ...) \
-    mAction(76, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_76(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_78(mAction, mData, mA0, mA1, ...) \
-    mAction(77, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_77(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_79(mAction, mData, mA0, mA1, ...) \
-    mAction(78, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_78(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_80(mAction, mData, mA0, mA1, ...) \
-    mAction(79, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_79(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_81(mAction, mData, mA0, mA1, ...) \
-    mAction(80, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_80(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_82(mAction, mData, mA0, mA1, ...) \
-    mAction(81, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_81(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_83(mAction, mData, mA0, mA1, ...) \
-    mAction(82, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_82(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_84(mAction, mData, mA0, mA1, ...) \
-    mAction(83, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_83(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_85(mAction, mData, mA0, mA1, ...) \
-    mAction(84, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_84(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_86(mAction, mData, mA0, mA1, ...) \
-    mAction(85, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_85(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_87(mAction, mData, mA0, mA1, ...) \
-    mAction(86, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_86(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_88(mAction, mData, mA0, mA1, ...) \
-    mAction(87, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_87(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_89(mAction, mData, mA0, mA1, ...) \
-    mAction(88, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_88(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_90(mAction, mData, mA0, mA1, ...) \
-    mAction(89, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_89(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_91(mAction, mData, mA0, mA1, ...) \
-    mAction(90, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_90(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_92(mAction, mData, mA0, mA1, ...) \
-    mAction(91, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_91(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_93(mAction, mData, mA0, mA1, ...) \
-    mAction(92, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_92(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_94(mAction, mData, mA0, mA1, ...) \
-    mAction(93, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_93(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_95(mAction, mData, mA0, mA1, ...) \
-    mAction(94, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_94(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_96(mAction, mData, mA0, mA1, ...) \
-    mAction(95, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_95(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_97(mAction, mData, mA0, mA1, ...) \
-    mAction(96, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_96(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_98(mAction, mData, mA0, mA1, ...) \
-    mAction(97, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_97(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_99(mAction, mData, mA0, mA1, ...) \
-    mAction(98, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_98(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_100(mAction, mData, mA0, mA1, ...) \
-    mAction(99, mData, mA0)                                            \
-    VRM_PP_IMPL_FOREACH_REVERSE_99(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_101(mAction, mData, mA0, mA1, ...) \
-    mAction(100, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_100(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_102(mAction, mData, mA0, mA1, ...) \
-    mAction(101, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_101(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_103(mAction, mData, mA0, mA1, ...) \
-    mAction(102, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_102(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_104(mAction, mData, mA0, mA1, ...) \
-    mAction(103, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_103(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_105(mAction, mData, mA0, mA1, ...) \
-    mAction(104, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_104(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_106(mAction, mData, mA0, mA1, ...) \
-    mAction(105, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_105(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_107(mAction, mData, mA0, mA1, ...) \
-    mAction(106, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_106(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_108(mAction, mData, mA0, mA1, ...) \
-    mAction(107, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_107(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_109(mAction, mData, mA0, mA1, ...) \
-    mAction(108, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_108(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_110(mAction, mData, mA0, mA1, ...) \
-    mAction(109, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_109(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_111(mAction, mData, mA0, mA1, ...) \
-    mAction(110, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_110(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_112(mAction, mData, mA0, mA1, ...) \
-    mAction(111, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_111(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_113(mAction, mData, mA0, mA1, ...) \
-    mAction(112, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_112(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_114(mAction, mData, mA0, mA1, ...) \
-    mAction(113, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_113(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_115(mAction, mData, mA0, mA1, ...) \
-    mAction(114, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_114(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_116(mAction, mData, mA0, mA1, ...) \
-    mAction(115, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_115(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_117(mAction, mData, mA0, mA1, ...) \
-    mAction(116, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_116(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_118(mAction, mData, mA0, mA1, ...) \
-    mAction(117, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_117(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_119(mAction, mData, mA0, mA1, ...) \
-    mAction(118, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_118(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_120(mAction, mData, mA0, mA1, ...) \
-    mAction(119, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_119(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_121(mAction, mData, mA0, mA1, ...) \
-    mAction(120, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_120(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_122(mAction, mData, mA0, mA1, ...) \
-    mAction(121, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_121(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_123(mAction, mData, mA0, mA1, ...) \
-    mAction(122, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_122(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_124(mAction, mData, mA0, mA1, ...) \
-    mAction(123, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_123(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_125(mAction, mData, mA0, mA1, ...) \
-    mAction(124, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_124(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_126(mAction, mData, mA0, mA1, ...) \
-    mAction(125, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_125(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_127(mAction, mData, mA0, mA1, ...) \
-    mAction(126, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_126(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_128(mAction, mData, mA0, mA1, ...) \
-    mAction(127, mData, mA0)                                           \
-    VRM_PP_IMPL_FOREACH_REVERSE_127(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_0(mAction, mData)                     
+#define VRM_PP_IMPL_FOREACH_REVERSE_1(mAction, mData, mA0)                mAction(0, mData, mA0)
+#define VRM_PP_IMPL_FOREACH_REVERSE_2(mAction, mData, mA0, mA1)           mAction(1, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_1(mAction, mData, mA1)
+#define VRM_PP_IMPL_FOREACH_REVERSE_3(mAction, mData, mA0, mA1, ...)      mAction(2, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_2(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_4(mAction, mData, mA0, mA1, ...)      mAction(3, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_3(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_5(mAction, mData, mA0, mA1, ...)      mAction(4, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_4(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_6(mAction, mData, mA0, mA1, ...)      mAction(5, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_5(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_7(mAction, mData, mA0, mA1, ...)      mAction(6, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_6(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_8(mAction, mData, mA0, mA1, ...)      mAction(7, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_7(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_9(mAction, mData, mA0, mA1, ...)      mAction(8, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_8(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_10(mAction, mData, mA0, mA1, ...)      mAction(9, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_9(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_11(mAction, mData, mA0, mA1, ...)      mAction(10, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_10(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_12(mAction, mData, mA0, mA1, ...)      mAction(11, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_11(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_13(mAction, mData, mA0, mA1, ...)      mAction(12, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_12(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_14(mAction, mData, mA0, mA1, ...)      mAction(13, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_13(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_15(mAction, mData, mA0, mA1, ...)      mAction(14, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_14(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_16(mAction, mData, mA0, mA1, ...)      mAction(15, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_15(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_17(mAction, mData, mA0, mA1, ...)      mAction(16, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_16(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_18(mAction, mData, mA0, mA1, ...)      mAction(17, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_17(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_19(mAction, mData, mA0, mA1, ...)      mAction(18, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_18(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_20(mAction, mData, mA0, mA1, ...)      mAction(19, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_19(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_21(mAction, mData, mA0, mA1, ...)      mAction(20, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_20(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_22(mAction, mData, mA0, mA1, ...)      mAction(21, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_21(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_23(mAction, mData, mA0, mA1, ...)      mAction(22, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_22(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_24(mAction, mData, mA0, mA1, ...)      mAction(23, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_23(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_25(mAction, mData, mA0, mA1, ...)      mAction(24, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_24(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_26(mAction, mData, mA0, mA1, ...)      mAction(25, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_25(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_27(mAction, mData, mA0, mA1, ...)      mAction(26, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_26(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_28(mAction, mData, mA0, mA1, ...)      mAction(27, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_27(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_29(mAction, mData, mA0, mA1, ...)      mAction(28, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_28(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_30(mAction, mData, mA0, mA1, ...)      mAction(29, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_29(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_31(mAction, mData, mA0, mA1, ...)      mAction(30, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_30(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_32(mAction, mData, mA0, mA1, ...)      mAction(31, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_31(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_33(mAction, mData, mA0, mA1, ...)      mAction(32, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_32(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_34(mAction, mData, mA0, mA1, ...)      mAction(33, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_33(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_35(mAction, mData, mA0, mA1, ...)      mAction(34, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_34(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_36(mAction, mData, mA0, mA1, ...)      mAction(35, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_35(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_37(mAction, mData, mA0, mA1, ...)      mAction(36, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_36(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_38(mAction, mData, mA0, mA1, ...)      mAction(37, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_37(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_39(mAction, mData, mA0, mA1, ...)      mAction(38, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_38(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_40(mAction, mData, mA0, mA1, ...)      mAction(39, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_39(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_41(mAction, mData, mA0, mA1, ...)      mAction(40, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_40(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_42(mAction, mData, mA0, mA1, ...)      mAction(41, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_41(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_43(mAction, mData, mA0, mA1, ...)      mAction(42, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_42(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_44(mAction, mData, mA0, mA1, ...)      mAction(43, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_43(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_45(mAction, mData, mA0, mA1, ...)      mAction(44, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_44(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_46(mAction, mData, mA0, mA1, ...)      mAction(45, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_45(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_47(mAction, mData, mA0, mA1, ...)      mAction(46, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_46(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_48(mAction, mData, mA0, mA1, ...)      mAction(47, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_47(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_49(mAction, mData, mA0, mA1, ...)      mAction(48, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_48(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_50(mAction, mData, mA0, mA1, ...)      mAction(49, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_49(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_51(mAction, mData, mA0, mA1, ...)      mAction(50, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_50(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_52(mAction, mData, mA0, mA1, ...)      mAction(51, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_51(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_53(mAction, mData, mA0, mA1, ...)      mAction(52, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_52(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_54(mAction, mData, mA0, mA1, ...)      mAction(53, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_53(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_55(mAction, mData, mA0, mA1, ...)      mAction(54, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_54(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_56(mAction, mData, mA0, mA1, ...)      mAction(55, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_55(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_57(mAction, mData, mA0, mA1, ...)      mAction(56, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_56(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_58(mAction, mData, mA0, mA1, ...)      mAction(57, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_57(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_59(mAction, mData, mA0, mA1, ...)      mAction(58, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_58(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_60(mAction, mData, mA0, mA1, ...)      mAction(59, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_59(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_61(mAction, mData, mA0, mA1, ...)      mAction(60, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_60(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_62(mAction, mData, mA0, mA1, ...)      mAction(61, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_61(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_63(mAction, mData, mA0, mA1, ...)      mAction(62, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_62(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_64(mAction, mData, mA0, mA1, ...)      mAction(63, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_63(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_65(mAction, mData, mA0, mA1, ...)      mAction(64, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_64(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_66(mAction, mData, mA0, mA1, ...)      mAction(65, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_65(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_67(mAction, mData, mA0, mA1, ...)      mAction(66, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_66(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_68(mAction, mData, mA0, mA1, ...)      mAction(67, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_67(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_69(mAction, mData, mA0, mA1, ...)      mAction(68, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_68(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_70(mAction, mData, mA0, mA1, ...)      mAction(69, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_69(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_71(mAction, mData, mA0, mA1, ...)      mAction(70, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_70(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_72(mAction, mData, mA0, mA1, ...)      mAction(71, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_71(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_73(mAction, mData, mA0, mA1, ...)      mAction(72, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_72(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_74(mAction, mData, mA0, mA1, ...)      mAction(73, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_73(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_75(mAction, mData, mA0, mA1, ...)      mAction(74, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_74(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_76(mAction, mData, mA0, mA1, ...)      mAction(75, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_75(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_77(mAction, mData, mA0, mA1, ...)      mAction(76, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_76(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_78(mAction, mData, mA0, mA1, ...)      mAction(77, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_77(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_79(mAction, mData, mA0, mA1, ...)      mAction(78, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_78(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_80(mAction, mData, mA0, mA1, ...)      mAction(79, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_79(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_81(mAction, mData, mA0, mA1, ...)      mAction(80, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_80(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_82(mAction, mData, mA0, mA1, ...)      mAction(81, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_81(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_83(mAction, mData, mA0, mA1, ...)      mAction(82, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_82(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_84(mAction, mData, mA0, mA1, ...)      mAction(83, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_83(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_85(mAction, mData, mA0, mA1, ...)      mAction(84, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_84(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_86(mAction, mData, mA0, mA1, ...)      mAction(85, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_85(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_87(mAction, mData, mA0, mA1, ...)      mAction(86, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_86(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_88(mAction, mData, mA0, mA1, ...)      mAction(87, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_87(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_89(mAction, mData, mA0, mA1, ...)      mAction(88, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_88(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_90(mAction, mData, mA0, mA1, ...)      mAction(89, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_89(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_91(mAction, mData, mA0, mA1, ...)      mAction(90, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_90(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_92(mAction, mData, mA0, mA1, ...)      mAction(91, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_91(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_93(mAction, mData, mA0, mA1, ...)      mAction(92, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_92(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_94(mAction, mData, mA0, mA1, ...)      mAction(93, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_93(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_95(mAction, mData, mA0, mA1, ...)      mAction(94, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_94(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_96(mAction, mData, mA0, mA1, ...)      mAction(95, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_95(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_97(mAction, mData, mA0, mA1, ...)      mAction(96, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_96(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_98(mAction, mData, mA0, mA1, ...)      mAction(97, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_97(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_99(mAction, mData, mA0, mA1, ...)      mAction(98, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_98(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_100(mAction, mData, mA0, mA1, ...)      mAction(99, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_99(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_101(mAction, mData, mA0, mA1, ...)      mAction(100, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_100(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_102(mAction, mData, mA0, mA1, ...)      mAction(101, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_101(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_103(mAction, mData, mA0, mA1, ...)      mAction(102, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_102(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_104(mAction, mData, mA0, mA1, ...)      mAction(103, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_103(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_105(mAction, mData, mA0, mA1, ...)      mAction(104, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_104(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_106(mAction, mData, mA0, mA1, ...)      mAction(105, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_105(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_107(mAction, mData, mA0, mA1, ...)      mAction(106, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_106(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_108(mAction, mData, mA0, mA1, ...)      mAction(107, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_107(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_109(mAction, mData, mA0, mA1, ...)      mAction(108, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_108(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_110(mAction, mData, mA0, mA1, ...)      mAction(109, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_109(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_111(mAction, mData, mA0, mA1, ...)      mAction(110, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_110(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_112(mAction, mData, mA0, mA1, ...)      mAction(111, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_111(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_113(mAction, mData, mA0, mA1, ...)      mAction(112, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_112(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_114(mAction, mData, mA0, mA1, ...)      mAction(113, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_113(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_115(mAction, mData, mA0, mA1, ...)      mAction(114, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_114(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_116(mAction, mData, mA0, mA1, ...)      mAction(115, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_115(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_117(mAction, mData, mA0, mA1, ...)      mAction(116, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_116(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_118(mAction, mData, mA0, mA1, ...)      mAction(117, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_117(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_119(mAction, mData, mA0, mA1, ...)      mAction(118, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_118(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_120(mAction, mData, mA0, mA1, ...)      mAction(119, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_119(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_121(mAction, mData, mA0, mA1, ...)      mAction(120, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_120(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_122(mAction, mData, mA0, mA1, ...)      mAction(121, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_121(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_123(mAction, mData, mA0, mA1, ...)      mAction(122, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_122(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_124(mAction, mData, mA0, mA1, ...)      mAction(123, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_123(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_125(mAction, mData, mA0, mA1, ...)      mAction(124, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_124(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_126(mAction, mData, mA0, mA1, ...)      mAction(125, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_125(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_127(mAction, mData, mA0, mA1, ...)      mAction(126, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_126(mAction, mData, mA1, __VA_ARGS__)
+#define VRM_PP_IMPL_FOREACH_REVERSE_128(mAction, mData, mA0, mA1, ...)      mAction(127, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_127(mAction, mData, mA1, __VA_ARGS__)
 
 
 #define VRM_PP_IMPL_REPEAT_DEC_0(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_1(mAction, mData) \
-    mAction(0, mData) VRM_PP_IMPL_REPEAT_DEC_0(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_2(mAction, mData) \
-    mAction(1, mData) VRM_PP_IMPL_REPEAT_DEC_1(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_3(mAction, mData) \
-    mAction(2, mData) VRM_PP_IMPL_REPEAT_DEC_2(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_4(mAction, mData) \
-    mAction(3, mData) VRM_PP_IMPL_REPEAT_DEC_3(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_5(mAction, mData) \
-    mAction(4, mData) VRM_PP_IMPL_REPEAT_DEC_4(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_6(mAction, mData) \
-    mAction(5, mData) VRM_PP_IMPL_REPEAT_DEC_5(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_7(mAction, mData) \
-    mAction(6, mData) VRM_PP_IMPL_REPEAT_DEC_6(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_8(mAction, mData) \
-    mAction(7, mData) VRM_PP_IMPL_REPEAT_DEC_7(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_9(mAction, mData) \
-    mAction(8, mData) VRM_PP_IMPL_REPEAT_DEC_8(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_10(mAction, mData) \
-    mAction(9, mData) VRM_PP_IMPL_REPEAT_DEC_9(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_11(mAction, mData) \
-    mAction(10, mData) VRM_PP_IMPL_REPEAT_DEC_10(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_12(mAction, mData) \
-    mAction(11, mData) VRM_PP_IMPL_REPEAT_DEC_11(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_13(mAction, mData) \
-    mAction(12, mData) VRM_PP_IMPL_REPEAT_DEC_12(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_14(mAction, mData) \
-    mAction(13, mData) VRM_PP_IMPL_REPEAT_DEC_13(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_15(mAction, mData) \
-    mAction(14, mData) VRM_PP_IMPL_REPEAT_DEC_14(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_16(mAction, mData) \
-    mAction(15, mData) VRM_PP_IMPL_REPEAT_DEC_15(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_17(mAction, mData) \
-    mAction(16, mData) VRM_PP_IMPL_REPEAT_DEC_16(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_18(mAction, mData) \
-    mAction(17, mData) VRM_PP_IMPL_REPEAT_DEC_17(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_19(mAction, mData) \
-    mAction(18, mData) VRM_PP_IMPL_REPEAT_DEC_18(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_20(mAction, mData) \
-    mAction(19, mData) VRM_PP_IMPL_REPEAT_DEC_19(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_21(mAction, mData) \
-    mAction(20, mData) VRM_PP_IMPL_REPEAT_DEC_20(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_22(mAction, mData) \
-    mAction(21, mData) VRM_PP_IMPL_REPEAT_DEC_21(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_23(mAction, mData) \
-    mAction(22, mData) VRM_PP_IMPL_REPEAT_DEC_22(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_24(mAction, mData) \
-    mAction(23, mData) VRM_PP_IMPL_REPEAT_DEC_23(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_25(mAction, mData) \
-    mAction(24, mData) VRM_PP_IMPL_REPEAT_DEC_24(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_26(mAction, mData) \
-    mAction(25, mData) VRM_PP_IMPL_REPEAT_DEC_25(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_27(mAction, mData) \
-    mAction(26, mData) VRM_PP_IMPL_REPEAT_DEC_26(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_28(mAction, mData) \
-    mAction(27, mData) VRM_PP_IMPL_REPEAT_DEC_27(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_29(mAction, mData) \
-    mAction(28, mData) VRM_PP_IMPL_REPEAT_DEC_28(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_30(mAction, mData) \
-    mAction(29, mData) VRM_PP_IMPL_REPEAT_DEC_29(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_31(mAction, mData) \
-    mAction(30, mData) VRM_PP_IMPL_REPEAT_DEC_30(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_32(mAction, mData) \
-    mAction(31, mData) VRM_PP_IMPL_REPEAT_DEC_31(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_33(mAction, mData) \
-    mAction(32, mData) VRM_PP_IMPL_REPEAT_DEC_32(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_34(mAction, mData) \
-    mAction(33, mData) VRM_PP_IMPL_REPEAT_DEC_33(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_35(mAction, mData) \
-    mAction(34, mData) VRM_PP_IMPL_REPEAT_DEC_34(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_36(mAction, mData) \
-    mAction(35, mData) VRM_PP_IMPL_REPEAT_DEC_35(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_37(mAction, mData) \
-    mAction(36, mData) VRM_PP_IMPL_REPEAT_DEC_36(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_38(mAction, mData) \
-    mAction(37, mData) VRM_PP_IMPL_REPEAT_DEC_37(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_39(mAction, mData) \
-    mAction(38, mData) VRM_PP_IMPL_REPEAT_DEC_38(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_40(mAction, mData) \
-    mAction(39, mData) VRM_PP_IMPL_REPEAT_DEC_39(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_41(mAction, mData) \
-    mAction(40, mData) VRM_PP_IMPL_REPEAT_DEC_40(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_42(mAction, mData) \
-    mAction(41, mData) VRM_PP_IMPL_REPEAT_DEC_41(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_43(mAction, mData) \
-    mAction(42, mData) VRM_PP_IMPL_REPEAT_DEC_42(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_44(mAction, mData) \
-    mAction(43, mData) VRM_PP_IMPL_REPEAT_DEC_43(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_45(mAction, mData) \
-    mAction(44, mData) VRM_PP_IMPL_REPEAT_DEC_44(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_46(mAction, mData) \
-    mAction(45, mData) VRM_PP_IMPL_REPEAT_DEC_45(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_47(mAction, mData) \
-    mAction(46, mData) VRM_PP_IMPL_REPEAT_DEC_46(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_48(mAction, mData) \
-    mAction(47, mData) VRM_PP_IMPL_REPEAT_DEC_47(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_49(mAction, mData) \
-    mAction(48, mData) VRM_PP_IMPL_REPEAT_DEC_48(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_50(mAction, mData) \
-    mAction(49, mData) VRM_PP_IMPL_REPEAT_DEC_49(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_51(mAction, mData) \
-    mAction(50, mData) VRM_PP_IMPL_REPEAT_DEC_50(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_52(mAction, mData) \
-    mAction(51, mData) VRM_PP_IMPL_REPEAT_DEC_51(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_53(mAction, mData) \
-    mAction(52, mData) VRM_PP_IMPL_REPEAT_DEC_52(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_54(mAction, mData) \
-    mAction(53, mData) VRM_PP_IMPL_REPEAT_DEC_53(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_55(mAction, mData) \
-    mAction(54, mData) VRM_PP_IMPL_REPEAT_DEC_54(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_56(mAction, mData) \
-    mAction(55, mData) VRM_PP_IMPL_REPEAT_DEC_55(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_57(mAction, mData) \
-    mAction(56, mData) VRM_PP_IMPL_REPEAT_DEC_56(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_58(mAction, mData) \
-    mAction(57, mData) VRM_PP_IMPL_REPEAT_DEC_57(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_59(mAction, mData) \
-    mAction(58, mData) VRM_PP_IMPL_REPEAT_DEC_58(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_60(mAction, mData) \
-    mAction(59, mData) VRM_PP_IMPL_REPEAT_DEC_59(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_61(mAction, mData) \
-    mAction(60, mData) VRM_PP_IMPL_REPEAT_DEC_60(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_62(mAction, mData) \
-    mAction(61, mData) VRM_PP_IMPL_REPEAT_DEC_61(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_63(mAction, mData) \
-    mAction(62, mData) VRM_PP_IMPL_REPEAT_DEC_62(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_64(mAction, mData) \
-    mAction(63, mData) VRM_PP_IMPL_REPEAT_DEC_63(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_65(mAction, mData) \
-    mAction(64, mData) VRM_PP_IMPL_REPEAT_DEC_64(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_66(mAction, mData) \
-    mAction(65, mData) VRM_PP_IMPL_REPEAT_DEC_65(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_67(mAction, mData) \
-    mAction(66, mData) VRM_PP_IMPL_REPEAT_DEC_66(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_68(mAction, mData) \
-    mAction(67, mData) VRM_PP_IMPL_REPEAT_DEC_67(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_69(mAction, mData) \
-    mAction(68, mData) VRM_PP_IMPL_REPEAT_DEC_68(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_70(mAction, mData) \
-    mAction(69, mData) VRM_PP_IMPL_REPEAT_DEC_69(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_71(mAction, mData) \
-    mAction(70, mData) VRM_PP_IMPL_REPEAT_DEC_70(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_72(mAction, mData) \
-    mAction(71, mData) VRM_PP_IMPL_REPEAT_DEC_71(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_73(mAction, mData) \
-    mAction(72, mData) VRM_PP_IMPL_REPEAT_DEC_72(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_74(mAction, mData) \
-    mAction(73, mData) VRM_PP_IMPL_REPEAT_DEC_73(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_75(mAction, mData) \
-    mAction(74, mData) VRM_PP_IMPL_REPEAT_DEC_74(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_76(mAction, mData) \
-    mAction(75, mData) VRM_PP_IMPL_REPEAT_DEC_75(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_77(mAction, mData) \
-    mAction(76, mData) VRM_PP_IMPL_REPEAT_DEC_76(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_78(mAction, mData) \
-    mAction(77, mData) VRM_PP_IMPL_REPEAT_DEC_77(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_79(mAction, mData) \
-    mAction(78, mData) VRM_PP_IMPL_REPEAT_DEC_78(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_80(mAction, mData) \
-    mAction(79, mData) VRM_PP_IMPL_REPEAT_DEC_79(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_81(mAction, mData) \
-    mAction(80, mData) VRM_PP_IMPL_REPEAT_DEC_80(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_82(mAction, mData) \
-    mAction(81, mData) VRM_PP_IMPL_REPEAT_DEC_81(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_83(mAction, mData) \
-    mAction(82, mData) VRM_PP_IMPL_REPEAT_DEC_82(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_84(mAction, mData) \
-    mAction(83, mData) VRM_PP_IMPL_REPEAT_DEC_83(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_85(mAction, mData) \
-    mAction(84, mData) VRM_PP_IMPL_REPEAT_DEC_84(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_86(mAction, mData) \
-    mAction(85, mData) VRM_PP_IMPL_REPEAT_DEC_85(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_87(mAction, mData) \
-    mAction(86, mData) VRM_PP_IMPL_REPEAT_DEC_86(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_88(mAction, mData) \
-    mAction(87, mData) VRM_PP_IMPL_REPEAT_DEC_87(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_89(mAction, mData) \
-    mAction(88, mData) VRM_PP_IMPL_REPEAT_DEC_88(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_90(mAction, mData) \
-    mAction(89, mData) VRM_PP_IMPL_REPEAT_DEC_89(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_91(mAction, mData) \
-    mAction(90, mData) VRM_PP_IMPL_REPEAT_DEC_90(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_92(mAction, mData) \
-    mAction(91, mData) VRM_PP_IMPL_REPEAT_DEC_91(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_93(mAction, mData) \
-    mAction(92, mData) VRM_PP_IMPL_REPEAT_DEC_92(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_94(mAction, mData) \
-    mAction(93, mData) VRM_PP_IMPL_REPEAT_DEC_93(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_95(mAction, mData) \
-    mAction(94, mData) VRM_PP_IMPL_REPEAT_DEC_94(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_96(mAction, mData) \
-    mAction(95, mData) VRM_PP_IMPL_REPEAT_DEC_95(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_97(mAction, mData) \
-    mAction(96, mData) VRM_PP_IMPL_REPEAT_DEC_96(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_98(mAction, mData) \
-    mAction(97, mData) VRM_PP_IMPL_REPEAT_DEC_97(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_99(mAction, mData) \
-    mAction(98, mData) VRM_PP_IMPL_REPEAT_DEC_98(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_100(mAction, mData) \
-    mAction(99, mData) VRM_PP_IMPL_REPEAT_DEC_99(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_101(mAction, mData) \
-    mAction(100, mData) VRM_PP_IMPL_REPEAT_DEC_100(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_102(mAction, mData) \
-    mAction(101, mData) VRM_PP_IMPL_REPEAT_DEC_101(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_103(mAction, mData) \
-    mAction(102, mData) VRM_PP_IMPL_REPEAT_DEC_102(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_104(mAction, mData) \
-    mAction(103, mData) VRM_PP_IMPL_REPEAT_DEC_103(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_105(mAction, mData) \
-    mAction(104, mData) VRM_PP_IMPL_REPEAT_DEC_104(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_106(mAction, mData) \
-    mAction(105, mData) VRM_PP_IMPL_REPEAT_DEC_105(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_107(mAction, mData) \
-    mAction(106, mData) VRM_PP_IMPL_REPEAT_DEC_106(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_108(mAction, mData) \
-    mAction(107, mData) VRM_PP_IMPL_REPEAT_DEC_107(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_109(mAction, mData) \
-    mAction(108, mData) VRM_PP_IMPL_REPEAT_DEC_108(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_110(mAction, mData) \
-    mAction(109, mData) VRM_PP_IMPL_REPEAT_DEC_109(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_111(mAction, mData) \
-    mAction(110, mData) VRM_PP_IMPL_REPEAT_DEC_110(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_112(mAction, mData) \
-    mAction(111, mData) VRM_PP_IMPL_REPEAT_DEC_111(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_113(mAction, mData) \
-    mAction(112, mData) VRM_PP_IMPL_REPEAT_DEC_112(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_114(mAction, mData) \
-    mAction(113, mData) VRM_PP_IMPL_REPEAT_DEC_113(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_115(mAction, mData) \
-    mAction(114, mData) VRM_PP_IMPL_REPEAT_DEC_114(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_116(mAction, mData) \
-    mAction(115, mData) VRM_PP_IMPL_REPEAT_DEC_115(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_117(mAction, mData) \
-    mAction(116, mData) VRM_PP_IMPL_REPEAT_DEC_116(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_118(mAction, mData) \
-    mAction(117, mData) VRM_PP_IMPL_REPEAT_DEC_117(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_119(mAction, mData) \
-    mAction(118, mData) VRM_PP_IMPL_REPEAT_DEC_118(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_120(mAction, mData) \
-    mAction(119, mData) VRM_PP_IMPL_REPEAT_DEC_119(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_121(mAction, mData) \
-    mAction(120, mData) VRM_PP_IMPL_REPEAT_DEC_120(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_122(mAction, mData) \
-    mAction(121, mData) VRM_PP_IMPL_REPEAT_DEC_121(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_123(mAction, mData) \
-    mAction(122, mData) VRM_PP_IMPL_REPEAT_DEC_122(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_124(mAction, mData) \
-    mAction(123, mData) VRM_PP_IMPL_REPEAT_DEC_123(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_125(mAction, mData) \
-    mAction(124, mData) VRM_PP_IMPL_REPEAT_DEC_124(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_126(mAction, mData) \
-    mAction(125, mData) VRM_PP_IMPL_REPEAT_DEC_125(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_127(mAction, mData) \
-    mAction(126, mData) VRM_PP_IMPL_REPEAT_DEC_126(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_128(mAction, mData) \
-    mAction(127, mData) VRM_PP_IMPL_REPEAT_DEC_127(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_1(mAction, mData) mAction(0, mData) VRM_PP_IMPL_REPEAT_DEC_0(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_2(mAction, mData) mAction(1, mData) VRM_PP_IMPL_REPEAT_DEC_1(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_3(mAction, mData) mAction(2, mData) VRM_PP_IMPL_REPEAT_DEC_2(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_4(mAction, mData) mAction(3, mData) VRM_PP_IMPL_REPEAT_DEC_3(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_5(mAction, mData) mAction(4, mData) VRM_PP_IMPL_REPEAT_DEC_4(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_6(mAction, mData) mAction(5, mData) VRM_PP_IMPL_REPEAT_DEC_5(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_7(mAction, mData) mAction(6, mData) VRM_PP_IMPL_REPEAT_DEC_6(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_8(mAction, mData) mAction(7, mData) VRM_PP_IMPL_REPEAT_DEC_7(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_9(mAction, mData) mAction(8, mData) VRM_PP_IMPL_REPEAT_DEC_8(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_10(mAction, mData) mAction(9, mData) VRM_PP_IMPL_REPEAT_DEC_9(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_11(mAction, mData) mAction(10, mData) VRM_PP_IMPL_REPEAT_DEC_10(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_12(mAction, mData) mAction(11, mData) VRM_PP_IMPL_REPEAT_DEC_11(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_13(mAction, mData) mAction(12, mData) VRM_PP_IMPL_REPEAT_DEC_12(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_14(mAction, mData) mAction(13, mData) VRM_PP_IMPL_REPEAT_DEC_13(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_15(mAction, mData) mAction(14, mData) VRM_PP_IMPL_REPEAT_DEC_14(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_16(mAction, mData) mAction(15, mData) VRM_PP_IMPL_REPEAT_DEC_15(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_17(mAction, mData) mAction(16, mData) VRM_PP_IMPL_REPEAT_DEC_16(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_18(mAction, mData) mAction(17, mData) VRM_PP_IMPL_REPEAT_DEC_17(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_19(mAction, mData) mAction(18, mData) VRM_PP_IMPL_REPEAT_DEC_18(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_20(mAction, mData) mAction(19, mData) VRM_PP_IMPL_REPEAT_DEC_19(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_21(mAction, mData) mAction(20, mData) VRM_PP_IMPL_REPEAT_DEC_20(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_22(mAction, mData) mAction(21, mData) VRM_PP_IMPL_REPEAT_DEC_21(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_23(mAction, mData) mAction(22, mData) VRM_PP_IMPL_REPEAT_DEC_22(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_24(mAction, mData) mAction(23, mData) VRM_PP_IMPL_REPEAT_DEC_23(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_25(mAction, mData) mAction(24, mData) VRM_PP_IMPL_REPEAT_DEC_24(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_26(mAction, mData) mAction(25, mData) VRM_PP_IMPL_REPEAT_DEC_25(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_27(mAction, mData) mAction(26, mData) VRM_PP_IMPL_REPEAT_DEC_26(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_28(mAction, mData) mAction(27, mData) VRM_PP_IMPL_REPEAT_DEC_27(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_29(mAction, mData) mAction(28, mData) VRM_PP_IMPL_REPEAT_DEC_28(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_30(mAction, mData) mAction(29, mData) VRM_PP_IMPL_REPEAT_DEC_29(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_31(mAction, mData) mAction(30, mData) VRM_PP_IMPL_REPEAT_DEC_30(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_32(mAction, mData) mAction(31, mData) VRM_PP_IMPL_REPEAT_DEC_31(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_33(mAction, mData) mAction(32, mData) VRM_PP_IMPL_REPEAT_DEC_32(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_34(mAction, mData) mAction(33, mData) VRM_PP_IMPL_REPEAT_DEC_33(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_35(mAction, mData) mAction(34, mData) VRM_PP_IMPL_REPEAT_DEC_34(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_36(mAction, mData) mAction(35, mData) VRM_PP_IMPL_REPEAT_DEC_35(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_37(mAction, mData) mAction(36, mData) VRM_PP_IMPL_REPEAT_DEC_36(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_38(mAction, mData) mAction(37, mData) VRM_PP_IMPL_REPEAT_DEC_37(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_39(mAction, mData) mAction(38, mData) VRM_PP_IMPL_REPEAT_DEC_38(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_40(mAction, mData) mAction(39, mData) VRM_PP_IMPL_REPEAT_DEC_39(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_41(mAction, mData) mAction(40, mData) VRM_PP_IMPL_REPEAT_DEC_40(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_42(mAction, mData) mAction(41, mData) VRM_PP_IMPL_REPEAT_DEC_41(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_43(mAction, mData) mAction(42, mData) VRM_PP_IMPL_REPEAT_DEC_42(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_44(mAction, mData) mAction(43, mData) VRM_PP_IMPL_REPEAT_DEC_43(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_45(mAction, mData) mAction(44, mData) VRM_PP_IMPL_REPEAT_DEC_44(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_46(mAction, mData) mAction(45, mData) VRM_PP_IMPL_REPEAT_DEC_45(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_47(mAction, mData) mAction(46, mData) VRM_PP_IMPL_REPEAT_DEC_46(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_48(mAction, mData) mAction(47, mData) VRM_PP_IMPL_REPEAT_DEC_47(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_49(mAction, mData) mAction(48, mData) VRM_PP_IMPL_REPEAT_DEC_48(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_50(mAction, mData) mAction(49, mData) VRM_PP_IMPL_REPEAT_DEC_49(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_51(mAction, mData) mAction(50, mData) VRM_PP_IMPL_REPEAT_DEC_50(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_52(mAction, mData) mAction(51, mData) VRM_PP_IMPL_REPEAT_DEC_51(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_53(mAction, mData) mAction(52, mData) VRM_PP_IMPL_REPEAT_DEC_52(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_54(mAction, mData) mAction(53, mData) VRM_PP_IMPL_REPEAT_DEC_53(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_55(mAction, mData) mAction(54, mData) VRM_PP_IMPL_REPEAT_DEC_54(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_56(mAction, mData) mAction(55, mData) VRM_PP_IMPL_REPEAT_DEC_55(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_57(mAction, mData) mAction(56, mData) VRM_PP_IMPL_REPEAT_DEC_56(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_58(mAction, mData) mAction(57, mData) VRM_PP_IMPL_REPEAT_DEC_57(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_59(mAction, mData) mAction(58, mData) VRM_PP_IMPL_REPEAT_DEC_58(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_60(mAction, mData) mAction(59, mData) VRM_PP_IMPL_REPEAT_DEC_59(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_61(mAction, mData) mAction(60, mData) VRM_PP_IMPL_REPEAT_DEC_60(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_62(mAction, mData) mAction(61, mData) VRM_PP_IMPL_REPEAT_DEC_61(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_63(mAction, mData) mAction(62, mData) VRM_PP_IMPL_REPEAT_DEC_62(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_64(mAction, mData) mAction(63, mData) VRM_PP_IMPL_REPEAT_DEC_63(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_65(mAction, mData) mAction(64, mData) VRM_PP_IMPL_REPEAT_DEC_64(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_66(mAction, mData) mAction(65, mData) VRM_PP_IMPL_REPEAT_DEC_65(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_67(mAction, mData) mAction(66, mData) VRM_PP_IMPL_REPEAT_DEC_66(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_68(mAction, mData) mAction(67, mData) VRM_PP_IMPL_REPEAT_DEC_67(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_69(mAction, mData) mAction(68, mData) VRM_PP_IMPL_REPEAT_DEC_68(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_70(mAction, mData) mAction(69, mData) VRM_PP_IMPL_REPEAT_DEC_69(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_71(mAction, mData) mAction(70, mData) VRM_PP_IMPL_REPEAT_DEC_70(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_72(mAction, mData) mAction(71, mData) VRM_PP_IMPL_REPEAT_DEC_71(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_73(mAction, mData) mAction(72, mData) VRM_PP_IMPL_REPEAT_DEC_72(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_74(mAction, mData) mAction(73, mData) VRM_PP_IMPL_REPEAT_DEC_73(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_75(mAction, mData) mAction(74, mData) VRM_PP_IMPL_REPEAT_DEC_74(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_76(mAction, mData) mAction(75, mData) VRM_PP_IMPL_REPEAT_DEC_75(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_77(mAction, mData) mAction(76, mData) VRM_PP_IMPL_REPEAT_DEC_76(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_78(mAction, mData) mAction(77, mData) VRM_PP_IMPL_REPEAT_DEC_77(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_79(mAction, mData) mAction(78, mData) VRM_PP_IMPL_REPEAT_DEC_78(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_80(mAction, mData) mAction(79, mData) VRM_PP_IMPL_REPEAT_DEC_79(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_81(mAction, mData) mAction(80, mData) VRM_PP_IMPL_REPEAT_DEC_80(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_82(mAction, mData) mAction(81, mData) VRM_PP_IMPL_REPEAT_DEC_81(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_83(mAction, mData) mAction(82, mData) VRM_PP_IMPL_REPEAT_DEC_82(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_84(mAction, mData) mAction(83, mData) VRM_PP_IMPL_REPEAT_DEC_83(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_85(mAction, mData) mAction(84, mData) VRM_PP_IMPL_REPEAT_DEC_84(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_86(mAction, mData) mAction(85, mData) VRM_PP_IMPL_REPEAT_DEC_85(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_87(mAction, mData) mAction(86, mData) VRM_PP_IMPL_REPEAT_DEC_86(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_88(mAction, mData) mAction(87, mData) VRM_PP_IMPL_REPEAT_DEC_87(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_89(mAction, mData) mAction(88, mData) VRM_PP_IMPL_REPEAT_DEC_88(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_90(mAction, mData) mAction(89, mData) VRM_PP_IMPL_REPEAT_DEC_89(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_91(mAction, mData) mAction(90, mData) VRM_PP_IMPL_REPEAT_DEC_90(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_92(mAction, mData) mAction(91, mData) VRM_PP_IMPL_REPEAT_DEC_91(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_93(mAction, mData) mAction(92, mData) VRM_PP_IMPL_REPEAT_DEC_92(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_94(mAction, mData) mAction(93, mData) VRM_PP_IMPL_REPEAT_DEC_93(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_95(mAction, mData) mAction(94, mData) VRM_PP_IMPL_REPEAT_DEC_94(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_96(mAction, mData) mAction(95, mData) VRM_PP_IMPL_REPEAT_DEC_95(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_97(mAction, mData) mAction(96, mData) VRM_PP_IMPL_REPEAT_DEC_96(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_98(mAction, mData) mAction(97, mData) VRM_PP_IMPL_REPEAT_DEC_97(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_99(mAction, mData) mAction(98, mData) VRM_PP_IMPL_REPEAT_DEC_98(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_100(mAction, mData) mAction(99, mData) VRM_PP_IMPL_REPEAT_DEC_99(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_101(mAction, mData) mAction(100, mData) VRM_PP_IMPL_REPEAT_DEC_100(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_102(mAction, mData) mAction(101, mData) VRM_PP_IMPL_REPEAT_DEC_101(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_103(mAction, mData) mAction(102, mData) VRM_PP_IMPL_REPEAT_DEC_102(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_104(mAction, mData) mAction(103, mData) VRM_PP_IMPL_REPEAT_DEC_103(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_105(mAction, mData) mAction(104, mData) VRM_PP_IMPL_REPEAT_DEC_104(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_106(mAction, mData) mAction(105, mData) VRM_PP_IMPL_REPEAT_DEC_105(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_107(mAction, mData) mAction(106, mData) VRM_PP_IMPL_REPEAT_DEC_106(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_108(mAction, mData) mAction(107, mData) VRM_PP_IMPL_REPEAT_DEC_107(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_109(mAction, mData) mAction(108, mData) VRM_PP_IMPL_REPEAT_DEC_108(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_110(mAction, mData) mAction(109, mData) VRM_PP_IMPL_REPEAT_DEC_109(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_111(mAction, mData) mAction(110, mData) VRM_PP_IMPL_REPEAT_DEC_110(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_112(mAction, mData) mAction(111, mData) VRM_PP_IMPL_REPEAT_DEC_111(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_113(mAction, mData) mAction(112, mData) VRM_PP_IMPL_REPEAT_DEC_112(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_114(mAction, mData) mAction(113, mData) VRM_PP_IMPL_REPEAT_DEC_113(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_115(mAction, mData) mAction(114, mData) VRM_PP_IMPL_REPEAT_DEC_114(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_116(mAction, mData) mAction(115, mData) VRM_PP_IMPL_REPEAT_DEC_115(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_117(mAction, mData) mAction(116, mData) VRM_PP_IMPL_REPEAT_DEC_116(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_118(mAction, mData) mAction(117, mData) VRM_PP_IMPL_REPEAT_DEC_117(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_119(mAction, mData) mAction(118, mData) VRM_PP_IMPL_REPEAT_DEC_118(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_120(mAction, mData) mAction(119, mData) VRM_PP_IMPL_REPEAT_DEC_119(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_121(mAction, mData) mAction(120, mData) VRM_PP_IMPL_REPEAT_DEC_120(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_122(mAction, mData) mAction(121, mData) VRM_PP_IMPL_REPEAT_DEC_121(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_123(mAction, mData) mAction(122, mData) VRM_PP_IMPL_REPEAT_DEC_122(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_124(mAction, mData) mAction(123, mData) VRM_PP_IMPL_REPEAT_DEC_123(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_125(mAction, mData) mAction(124, mData) VRM_PP_IMPL_REPEAT_DEC_124(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_126(mAction, mData) mAction(125, mData) VRM_PP_IMPL_REPEAT_DEC_125(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_127(mAction, mData) mAction(126, mData) VRM_PP_IMPL_REPEAT_DEC_126(mAction, mData)
+#define VRM_PP_IMPL_REPEAT_DEC_128(mAction, mData) mAction(127, mData) VRM_PP_IMPL_REPEAT_DEC_127(mAction, mData)
 
 #define VRM_PP_IMPL_REPEAT_INC_0(mAction, mData, mLast)
-#define VRM_PP_IMPL_REPEAT_INC_1(mAction, mData, mLast) \
-    mAction(mLast, mData)                               \
-    VRM_PP_IMPL_REPEAT_INC_0(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_2(mAction, mData, mLast) \
-    mAction(mLast, mData)                               \
-    VRM_PP_IMPL_REPEAT_INC_1(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_3(mAction, mData, mLast) \
-    mAction(mLast, mData)                               \
-    VRM_PP_IMPL_REPEAT_INC_2(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_4(mAction, mData, mLast) \
-    mAction(mLast, mData)                               \
-    VRM_PP_IMPL_REPEAT_INC_3(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_5(mAction, mData, mLast) \
-    mAction(mLast, mData)                               \
-    VRM_PP_IMPL_REPEAT_INC_4(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_6(mAction, mData, mLast) \
-    mAction(mLast, mData)                               \
-    VRM_PP_IMPL_REPEAT_INC_5(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_7(mAction, mData, mLast) \
-    mAction(mLast, mData)                               \
-    VRM_PP_IMPL_REPEAT_INC_6(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_8(mAction, mData, mLast) \
-    mAction(mLast, mData)                               \
-    VRM_PP_IMPL_REPEAT_INC_7(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_9(mAction, mData, mLast) \
-    mAction(mLast, mData)                               \
-    VRM_PP_IMPL_REPEAT_INC_8(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_10(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_9(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_11(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_10(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_12(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_11(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_13(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_12(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_14(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_13(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_15(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_14(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_16(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_15(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_17(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_16(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_18(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_17(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_19(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_18(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_20(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_19(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_21(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_20(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_22(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_21(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_23(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_22(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_24(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_23(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_25(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_24(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_26(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_25(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_27(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_26(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_28(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_27(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_29(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_28(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_30(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_29(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_31(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_30(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_32(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_31(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_33(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_32(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_34(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_33(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_35(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_34(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_36(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_35(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_37(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_36(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_38(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_37(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_39(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_38(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_40(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_39(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_41(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_40(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_42(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_41(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_43(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_42(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_44(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_43(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_45(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_44(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_46(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_45(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_47(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_46(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_48(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_47(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_49(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_48(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_50(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_49(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_51(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_50(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_52(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_51(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_53(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_52(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_54(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_53(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_55(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_54(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_56(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_55(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_57(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_56(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_58(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_57(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_59(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_58(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_60(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_59(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_61(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_60(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_62(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_61(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_63(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_62(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_64(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_63(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_65(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_64(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_66(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_65(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_67(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_66(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_68(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_67(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_69(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_68(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_70(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_69(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_71(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_70(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_72(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_71(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_73(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_72(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_74(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_73(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_75(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_74(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_76(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_75(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_77(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_76(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_78(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_77(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_79(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_78(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_80(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_79(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_81(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_80(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_82(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_81(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_83(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_82(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_84(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_83(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_85(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_84(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_86(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_85(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_87(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_86(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_88(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_87(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_89(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_88(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_90(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_89(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_91(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_90(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_92(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_91(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_93(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_92(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_94(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_93(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_95(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_94(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_96(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_95(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_97(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_96(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_98(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_97(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_99(mAction, mData, mLast) \
-    mAction(mLast, mData)                                \
-    VRM_PP_IMPL_REPEAT_INC_98(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_100(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_99(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_101(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_100(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_102(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_101(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_103(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_102(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_104(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_103(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_105(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_104(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_106(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_105(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_107(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_106(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_108(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_107(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_109(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_108(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_110(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_109(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_111(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_110(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_112(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_111(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_113(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_112(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_114(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_113(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_115(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_114(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_116(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_115(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_117(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_116(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_118(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_117(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_119(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_118(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_120(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_119(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_121(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_120(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_122(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_121(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_123(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_122(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_124(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_123(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_125(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_124(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_126(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_125(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_127(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_126(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_128(mAction, mData, mLast) \
-    mAction(mLast, mData)                                 \
-    VRM_PP_IMPL_REPEAT_INC_127(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_1(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_0(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_2(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_1(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_3(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_2(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_4(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_3(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_5(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_4(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_6(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_5(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_7(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_6(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_8(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_7(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_9(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_8(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_10(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_9(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_11(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_10(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_12(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_11(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_13(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_12(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_14(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_13(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_15(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_14(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_16(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_15(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_17(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_16(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_18(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_17(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_19(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_18(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_20(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_19(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_21(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_20(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_22(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_21(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_23(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_22(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_24(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_23(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_25(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_24(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_26(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_25(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_27(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_26(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_28(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_27(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_29(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_28(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_30(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_29(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_31(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_30(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_32(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_31(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_33(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_32(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_34(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_33(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_35(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_34(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_36(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_35(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_37(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_36(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_38(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_37(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_39(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_38(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_40(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_39(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_41(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_40(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_42(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_41(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_43(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_42(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_44(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_43(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_45(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_44(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_46(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_45(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_47(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_46(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_48(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_47(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_49(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_48(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_50(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_49(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_51(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_50(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_52(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_51(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_53(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_52(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_54(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_53(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_55(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_54(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_56(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_55(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_57(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_56(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_58(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_57(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_59(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_58(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_60(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_59(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_61(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_60(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_62(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_61(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_63(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_62(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_64(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_63(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_65(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_64(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_66(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_65(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_67(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_66(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_68(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_67(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_69(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_68(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_70(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_69(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_71(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_70(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_72(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_71(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_73(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_72(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_74(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_73(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_75(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_74(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_76(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_75(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_77(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_76(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_78(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_77(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_79(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_78(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_80(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_79(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_81(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_80(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_82(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_81(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_83(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_82(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_84(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_83(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_85(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_84(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_86(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_85(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_87(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_86(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_88(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_87(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_89(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_88(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_90(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_89(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_91(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_90(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_92(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_91(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_93(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_92(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_94(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_93(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_95(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_94(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_96(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_95(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_97(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_96(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_98(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_97(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_99(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_98(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_100(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_99(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_101(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_100(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_102(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_101(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_103(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_102(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_104(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_103(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_105(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_104(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_106(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_105(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_107(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_106(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_108(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_107(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_109(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_108(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_110(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_109(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_111(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_110(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_112(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_111(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_113(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_112(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_114(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_113(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_115(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_114(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_116(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_115(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_117(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_116(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_118(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_117(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_119(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_118(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_120(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_119(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_121(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_120(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_122(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_121(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_123(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_122(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_124(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_123(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_125(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_124(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_126(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_125(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_127(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_126(mAction, mData, VRM_PP_INCREMENT(mLast))
+#define VRM_PP_IMPL_REPEAT_INC_128(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_127(mAction, mData, VRM_PP_INCREMENT(mLast))
 
 #define VRM_PP_IMPL_EVAL_3(...) __VA_ARGS__
-#define VRM_PP_IMPL_EVAL_2(...) \
-    VRM_PP_IMPL_EVAL_3(VRM_PP_IMPL_EVAL_3(VRM_PP_IMPL_EVAL_3(__VA_ARGS__)))
-#define VRM_PP_IMPL_EVAL_1(...) \
-    VRM_PP_IMPL_EVAL_2(VRM_PP_IMPL_EVAL_2(VRM_PP_IMPL_EVAL_2(__VA_ARGS__)))
-#define VRM_PP_IMPL_EVAL_0(...) \
-    VRM_PP_IMPL_EVAL_1(VRM_PP_IMPL_EVAL_1(VRM_PP_IMPL_EVAL_1(__VA_ARGS__)))
+#define VRM_PP_IMPL_EVAL_2(...) VRM_PP_IMPL_EVAL_3(VRM_PP_IMPL_EVAL_3(VRM_PP_IMPL_EVAL_3(__VA_ARGS__)))
+#define VRM_PP_IMPL_EVAL_1(...) VRM_PP_IMPL_EVAL_2(VRM_PP_IMPL_EVAL_2(VRM_PP_IMPL_EVAL_2(__VA_ARGS__)))
+#define VRM_PP_IMPL_EVAL_0(...) VRM_PP_IMPL_EVAL_1(VRM_PP_IMPL_EVAL_1(VRM_PP_IMPL_EVAL_1(__VA_ARGS__)))
+
+

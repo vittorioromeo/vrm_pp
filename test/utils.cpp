@@ -25,16 +25,16 @@ int main()
     TEST_ASSERT_OP(TEMP_TEST_TEN_TX(), ==, 10);
 
     // Does not compile, as expected:
-    //	{
-    //		auto i = VRM_PP_DEFER(TEMP_TEST_TEN_TX)();
-    //		TEST_ASSERT_OP(i, ==, 10);
-    //	}
+    //  {
+    //      auto i = VRM_PP_DEFER(TEMP_TEST_TEN_TX)();
+    //      TEST_ASSERT_OP(i, ==, 10);
+    //  }
 
     // Does not compile, as expected:
-    //	{
-    //		auto i = VRM_PP_OBSTRUCT(TEMP_TEST_TEN_TX)();
-    //		TEST_ASSERT_OP(i, ==, 10);
-    //	}
+    //  {
+    //      auto i = VRM_PP_OBSTRUCT(TEMP_TEST_TEN_TX)();
+    //      TEST_ASSERT_OP(i, ==, 10);
+    //  }
 
     {
         auto i = VRM_PP_DEFER(VRM_PP_DEFER(TEMP_TEST_TEN_TX)());
@@ -82,7 +82,7 @@ int main()
 #define TEMP_TEST_M(i, _) i
 
     auto x = VRM_PP_TOSTR(VRM_PP_EVAL(REPEAT(8, TEMP_TEST_M, ~)));
-    TEST_ASSERT_OP(x, ==, std::string{"0 1 2 3 4 5 6 7"});
+    TEST_ASSERT_OP(x, ==, std::string{"01234567"});
 
 #undef TEMP_TEST_M
 #undef REPEAT
