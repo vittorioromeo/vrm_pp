@@ -68,10 +68,12 @@ int main()
 
 #define WHEN(c) VRM_PP_IF(c, VRM_PP_EXPAND, VRM_PP_EAT)
 
-#define WHILE_INDIRECT() WHILE
-#define WHILE(pred, op, ...) \
-    WHEN(pred(__VA_ARGS__))  \
-    (VRM_PP_DEFER(WHILE_INDIRECT)()(pred, op, op(__VA_ARGS__)), __VA_ARGS__)
+/*
+    #define WHILE_INDIRECT() WHILE
+    #define WHILE(pred, op, ...) \
+        WHEN(pred(__VA_ARGS__))  \
+        (VRM_PP_DEFER(WHILE_INDIRECT)()(pred, op, op(__VA_ARGS__)), __VA_ARGS__)
+*/
 
 #define REPEAT_INDIRECT() REPEAT
 #define REPEAT(count, macro, ...)                                       \
@@ -88,8 +90,8 @@ int main()
 #undef TEMP_TEST_M
 #undef REPEAT
 #undef REPEAT_INDIRECT
-#undef WHILE
-#undef WHILE_INDIRECT
+// #undef WHILE
+// #undef WHILE_INDIRECT
 #undef WHEN
 
     return 0;
