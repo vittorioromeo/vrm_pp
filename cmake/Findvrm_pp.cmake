@@ -9,14 +9,8 @@
 # Distributed under the Boost Software License, Version 1.0.
 # (See accompanying file LICENSE.md or copy at http://boost.org/LICENSE_1_0.txt)
 
-# TODO: document variables:
-# VRM_PP_FOUND
-# VRM_PP_INCLUDE_DIR
-# VRM_PP_CLONE_DIR
-# VRM_PP_ENABLE_TESTS
-
 find_path(
-    VRM_PP_INCLUDE_DIR 
+    VRM_PP_INCLUDE_DIR
 
     NAMES vrm/pp.hpp
     DOC "Include directory for the vrm_pp library"
