@@ -14,5 +14,10 @@ Small C++ preprocessor library
 2. Include `vrm_cmake` in your project's `CMakeLists.txt` and look for the `vrm_pp` extlib:
 
     ```cmake
+    # Include `vrm_cmake`:
+    list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/extlibs/vrm_cmake/cmake/")
+    include(vrm_cmake)
 
+    # Find `vrm_pp`:
+    vrm_cmake_find_extlib(vrm_pp)
     ```
