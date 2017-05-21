@@ -8,7 +8,7 @@
 [![gratipay][badge.gratipay]][gratipay]
 
 [badge.build]: https://img.shields.io/travis/SuperV1234/vrm_pp.svg?style=flat-square
-[badge.stability]: https://img.shields.io/badge/stability-stable-orange.svg?style=flat-square
+[badge.stability]: https://img.shields.io/badge/stability-stable-green.svg?style=flat-square
 [badge.license]: http://img.shields.io/badge/license-afl%203.0-blue.svg?style=flat-square
 [badge.gratipay]: https://img.shields.io/gratipay/user/SuperV1234.svg?style=flat-square
 
