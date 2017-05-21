@@ -6,6 +6,7 @@
 [![stability][badge.stability]][stability]
 [![license][badge.license]][license]
 [![gratipay][badge.gratipay]][gratipay]
+![badge.cpp](https://img.shields.io/badge/c++-98-ff69b4.svg?style=flat-square)
 
 [badge.build]: https://img.shields.io/travis/SuperV1234/vrm_pp.svg?style=flat-square
 [badge.stability]: https://img.shields.io/badge/stability-stable-green.svg?style=flat-square
