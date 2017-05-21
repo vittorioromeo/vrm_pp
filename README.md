@@ -1,6 +1,21 @@
-# vrm_pp [![Build Status](https://travis-ci.org/SuperV1234/vrm_pp.svg?branch=master)](https://travis-ci.org/SuperV1234/vrm_pp)
+# vrm_pp
 
-Small C++ preprocessor library
+> **Lightweight C++ preprocessor library.**
+
+[![build][badge.build]][build]
+[![stability][badge.stability]][stability]
+[![license][badge.license]][license]
+[![gratipay][badge.gratipay]][gratipay]
+
+[badge.build]: https://img.shields.io/travis/SuperV1234/vrm_pp.svg?style=flat-square
+[badge.stability]: https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square
+[badge.license]: http://img.shields.io/badge/license-afl%203.0-blue.svg?style=flat-square
+[badge.gratipay]: https://img.shields.io/gratipay/user/SuperV1234.svg?style=flat-square
+
+[build]: https://travis-ci.org/SuperV1234/vrm_pp
+[stability]: http://github.com/badges/stability-badges
+[license]: https://github.com/SuperV1234/vrm_pp/blob/master/LICENSE
+[gratipay]: https://gratipay.com/~SuperV1234/
 
 ## Intended usage (quick start)
 
