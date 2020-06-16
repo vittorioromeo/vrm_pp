@@ -10,16 +10,16 @@
 using namespace std;
 using namespace std::literals;
 
-constexpr size_t argCount{128};
+constexpr size_t argCount{120};
 constexpr size_t arithCount{256};
-constexpr size_t foreachCount{128};
+constexpr size_t foreachCount{120};
 constexpr size_t tplCount{64};
-constexpr size_t repeatCount{128};
+constexpr size_t repeatCount{120};
 constexpr size_t evalDepth{4};
 
 constexpr auto pfx("VRM_PP");
 
-constexpr auto copyright(R"(// Copyright (c) 2015-2016 Vittorio Romeo
+constexpr auto copyright(R"(// Copyright (c) 2015-2020 Vittorio Romeo
 // License: Academic Free License ("AFL") v. 3.0
 // AFL License page: http://opensource.org/licenses/AFL-3.0
 // http://vittorioromeo.info | vittorio.romeo@outlook.com)");

@@ -1,4 +1,4 @@
-// Copyright (c) 2015-2016 Vittorio Romeo
+// Copyright (c) 2015-2020 Vittorio Romeo
 // License: Academic Free License ("AFL") v. 3.0
 // AFL License page: http://opensource.org/licenses/AFL-3.0
 // http://vittorioromeo.info | vittorio.romeo@outlook.com// (auto-generated file)
@@ -779,10 +779,10 @@
 
 
 
-#define VRM_PP_IMPL_NSEQ( m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63, m64, m65, m66, m67, m68, m69, m70, m71, m72, m73, m74, m75, m76, m77, m78, m79, m80, m81, m82, m83, m84, m85, m86, m87, m88, m89, m90, m91, m92, m93, m94, m95, m96, m97, m98, m99, m100, m101, m102, m103, m104, m105, m106, m107, m108, m109, m110, m111, m112, m113, m114, m115, m116, m117, m118, m119, m120, m121, m122, m123, m124, m125, m126, m127, mN, ...) mN
+#define VRM_PP_IMPL_NSEQ( m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30, m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53, m54, m55, m56, m57, m58, m59, m60, m61, m62, m63, m64, m65, m66, m67, m68, m69, m70, m71, m72, m73, m74, m75, m76, m77, m78, m79, m80, m81, m82, m83, m84, m85, m86, m87, m88, m89, m90, m91, m92, m93, m94, m95, m96, m97, m98, m99, m100, m101, m102, m103, m104, m105, m106, m107, m108, m109, m110, m111, m112, m113, m114, m115, m116, m117, m118, m119, mN, ...) mN
 
-#define VRM_PP_IMPL_RSEQ()    127, 126, 125, 124, 123, 122, 121, 120, 119, 118, 117, 116, 115, 114, 113, 112, 111, 110, 109, 108, 107, 106, 105, 104, 103, 102, 101, 100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
-#define VRM_PP_IMPL_CSEQ()    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0
+#define VRM_PP_IMPL_RSEQ()    119, 118, 117, 116, 115, 114, 113, 112, 111, 110, 109, 108, 107, 106, 105, 104, 103, 102, 101, 100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
+#define VRM_PP_IMPL_CSEQ()    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0
 #define VRM_PP_IMPL_CAT_0()           VRM_PP_EMPTY()
 #define VRM_PP_IMPL_CAT_1(m0)         VRM_PP_EXPAND(m0)
 #define VRM_PP_IMPL_CAT_2(m0, m1)     VRM_PP_IMPL_CAT_1(VRM_PP_TKNCAT_2(m0, m1))
@@ -903,14 +903,6 @@
 #define VRM_PP_IMPL_CAT_117(m0, m1, ...)   VRM_PP_IMPL_CAT_116(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
 #define VRM_PP_IMPL_CAT_118(m0, m1, ...)   VRM_PP_IMPL_CAT_117(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
 #define VRM_PP_IMPL_CAT_119(m0, m1, ...)   VRM_PP_IMPL_CAT_118(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_120(m0, m1, ...)   VRM_PP_IMPL_CAT_119(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_121(m0, m1, ...)   VRM_PP_IMPL_CAT_120(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_122(m0, m1, ...)   VRM_PP_IMPL_CAT_121(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_123(m0, m1, ...)   VRM_PP_IMPL_CAT_122(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_124(m0, m1, ...)   VRM_PP_IMPL_CAT_123(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_125(m0, m1, ...)   VRM_PP_IMPL_CAT_124(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_126(m0, m1, ...)   VRM_PP_IMPL_CAT_125(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
-#define VRM_PP_IMPL_CAT_127(m0, m1, ...)   VRM_PP_IMPL_CAT_126(VRM_PP_TKNCAT_2(m0, m1), __VA_ARGS__)
 
 
 
@@ -1310,7 +1302,7 @@
 
 
 
-#define VRM_PP_IMPL_FOREACH_0(mLast, mAction, mData)                  
+#define VRM_PP_IMPL_FOREACH_0(mLast, mAction, mData)
 #define VRM_PP_IMPL_FOREACH_1(mLast, mAction, mData, mA0)             mAction(mLast, mData, mA0)
 #define VRM_PP_IMPL_FOREACH_2(mLast, mAction, mData, mA0, mA1)        mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_1(VRM_PP_INCREMENT(mLast), mAction, mData, mA1)
 #define VRM_PP_IMPL_FOREACH_3(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_2(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
@@ -1431,17 +1423,9 @@
 #define VRM_PP_IMPL_FOREACH_118(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_117(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
 #define VRM_PP_IMPL_FOREACH_119(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_118(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
 #define VRM_PP_IMPL_FOREACH_120(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_119(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_121(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_120(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_122(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_121(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_123(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_122(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_124(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_123(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_125(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_124(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_126(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_125(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_127(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_126(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_128(mLast, mAction, mData, mA0, mA1, ...)       mAction(mLast, mData, mA0) VRM_PP_IMPL_FOREACH_127(VRM_PP_INCREMENT(mLast), mAction, mData, mA1, __VA_ARGS__)
 
 
-#define VRM_PP_IMPL_FOREACH_REVERSE_0(mAction, mData)                     
+#define VRM_PP_IMPL_FOREACH_REVERSE_0(mAction, mData)
 #define VRM_PP_IMPL_FOREACH_REVERSE_1(mAction, mData, mA0)                mAction(0, mData, mA0)
 #define VRM_PP_IMPL_FOREACH_REVERSE_2(mAction, mData, mA0, mA1)           mAction(1, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_1(mAction, mData, mA1)
 #define VRM_PP_IMPL_FOREACH_REVERSE_3(mAction, mData, mA0, mA1, ...)      mAction(2, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_2(mAction, mData, mA1, __VA_ARGS__)
@@ -1562,14 +1546,6 @@
 #define VRM_PP_IMPL_FOREACH_REVERSE_118(mAction, mData, mA0, mA1, ...)      mAction(117, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_117(mAction, mData, mA1, __VA_ARGS__)
 #define VRM_PP_IMPL_FOREACH_REVERSE_119(mAction, mData, mA0, mA1, ...)      mAction(118, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_118(mAction, mData, mA1, __VA_ARGS__)
 #define VRM_PP_IMPL_FOREACH_REVERSE_120(mAction, mData, mA0, mA1, ...)      mAction(119, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_119(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_121(mAction, mData, mA0, mA1, ...)      mAction(120, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_120(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_122(mAction, mData, mA0, mA1, ...)      mAction(121, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_121(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_123(mAction, mData, mA0, mA1, ...)      mAction(122, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_122(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_124(mAction, mData, mA0, mA1, ...)      mAction(123, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_123(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_125(mAction, mData, mA0, mA1, ...)      mAction(124, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_124(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_126(mAction, mData, mA0, mA1, ...)      mAction(125, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_125(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_127(mAction, mData, mA0, mA1, ...)      mAction(126, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_126(mAction, mData, mA1, __VA_ARGS__)
-#define VRM_PP_IMPL_FOREACH_REVERSE_128(mAction, mData, mA0, mA1, ...)      mAction(127, mData, mA0) VRM_PP_IMPL_FOREACH_REVERSE_127(mAction, mData, mA1, __VA_ARGS__)
 
 
 #define VRM_PP_IMPL_REPEAT_DEC_0(mAction, mData)
@@ -1693,14 +1669,6 @@
 #define VRM_PP_IMPL_REPEAT_DEC_118(mAction, mData) mAction(117, mData) VRM_PP_IMPL_REPEAT_DEC_117(mAction, mData)
 #define VRM_PP_IMPL_REPEAT_DEC_119(mAction, mData) mAction(118, mData) VRM_PP_IMPL_REPEAT_DEC_118(mAction, mData)
 #define VRM_PP_IMPL_REPEAT_DEC_120(mAction, mData) mAction(119, mData) VRM_PP_IMPL_REPEAT_DEC_119(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_121(mAction, mData) mAction(120, mData) VRM_PP_IMPL_REPEAT_DEC_120(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_122(mAction, mData) mAction(121, mData) VRM_PP_IMPL_REPEAT_DEC_121(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_123(mAction, mData) mAction(122, mData) VRM_PP_IMPL_REPEAT_DEC_122(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_124(mAction, mData) mAction(123, mData) VRM_PP_IMPL_REPEAT_DEC_123(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_125(mAction, mData) mAction(124, mData) VRM_PP_IMPL_REPEAT_DEC_124(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_126(mAction, mData) mAction(125, mData) VRM_PP_IMPL_REPEAT_DEC_125(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_127(mAction, mData) mAction(126, mData) VRM_PP_IMPL_REPEAT_DEC_126(mAction, mData)
-#define VRM_PP_IMPL_REPEAT_DEC_128(mAction, mData) mAction(127, mData) VRM_PP_IMPL_REPEAT_DEC_127(mAction, mData)
 
 #define VRM_PP_IMPL_REPEAT_INC_0(mAction, mData, mLast)
 #define VRM_PP_IMPL_REPEAT_INC_1(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_0(mAction, mData, VRM_PP_INCREMENT(mLast))
@@ -1823,14 +1791,6 @@
 #define VRM_PP_IMPL_REPEAT_INC_118(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_117(mAction, mData, VRM_PP_INCREMENT(mLast))
 #define VRM_PP_IMPL_REPEAT_INC_119(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_118(mAction, mData, VRM_PP_INCREMENT(mLast))
 #define VRM_PP_IMPL_REPEAT_INC_120(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_119(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_121(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_120(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_122(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_121(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_123(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_122(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_124(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_123(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_125(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_124(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_126(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_125(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_127(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_126(mAction, mData, VRM_PP_INCREMENT(mLast))
-#define VRM_PP_IMPL_REPEAT_INC_128(mAction, mData, mLast) mAction(mLast, mData) VRM_PP_IMPL_REPEAT_INC_127(mAction, mData, VRM_PP_INCREMENT(mLast))
 
 #define VRM_PP_IMPL_EVAL_3(...) __VA_ARGS__
 #define VRM_PP_IMPL_EVAL_2(...) VRM_PP_IMPL_EVAL_3(VRM_PP_IMPL_EVAL_3(VRM_PP_IMPL_EVAL_3(__VA_ARGS__)))
